@@ -1,0 +1,57 @@
+/*
+
+	Style settings of the slider example templates
+
+*/
+
+#layerslider {
+	position:relative;
+}
+
+.fullsize {
+	margin-top: 0 !important;
+}
+
+.txt_info a{
+	letter-spacing:1.6px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color:#FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+	.txt_info a{
+		letter-spacing:1.0px;
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 250px) and (max-width: 350px) {
+	.txt_info a{
+		letter-spacing:1.0px;
+		font-size: 8px;
+	}
+}
+
+.txt_info a:hover{
+	color: #F5F5F5; 
+	text-decoration:none;
+}
+
+.div_info{
+	top: 0%; 
+	left: 0%;
+	width:99%;
+	min-height: 98% !important;
+	background: transparent;
+	white-space: normal !important;
+	padding: 0.5% !important;
+}
+
+.div_info_2{
+	width:30%;
+	min-height: 5% !important;
+	height:auto !important;
+}

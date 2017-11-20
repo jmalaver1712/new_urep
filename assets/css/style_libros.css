@@ -1,0 +1,59 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.img_card{
+	/*height: 100%;*/
+	width: 100%; 
+}
+
+.titulo_card{
+	font-size: 0.80em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 8px;
+}
+
+.autor_card{
+	font-size: 0.70em;
+	font-style: italic;
+}
+
+.enlace{
+	color: #8A0808 !important;
+}
+
+/* DETAIL */
+.titulo_libro{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.autor_libro{
+	font-style: italic;
+}
+
+.citacion{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.citacion b{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.ocultar{
+	display: none;
+}
