@@ -11,7 +11,7 @@
 		<div class="row center">
 			<div class="col s12">
 				<h2>Pagos y Financiación</h2>
-				<img src="../images/web/financiacion/banner_financiacion.jpg" width="100%">
+				<img src="<?= URL_MASTER ?>/images/web/financiacion/banner_financiacion.jpg" width="100%">
 			</div>
 		</div>
 
@@ -20,14 +20,14 @@
 
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#finan_pagos">
-					<img class="atajo" name="../images/web/financiacion/pagos_1.png" src="../images/web/financiacion/pagos.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/financiacion/pagos_1.png" src="<?= URL_MASTER ?>/images/web/financiacion/pagos.png">
 					<p>Formas de Pago</p>
 				</span>
 			</div>
 
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#finan_finaciacion">
-					<img class="atajo" name="../images/web/financiacion/fianciamiento_1.png" src="../images/web/financiacion/fianciamiento.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/financiacion/fianciamiento_1.png" src="<?= URL_MASTER ?>/images/web/financiacion/fianciamiento.png">
 					<p>Financiación</p>
 				</span>
 			</div>
@@ -41,7 +41,7 @@
 					<div class="col s12 m6">
 						<div class="card horizontal">
 							<div class="card-image">
-								<img src="../images/web/financiacion/finan_codensa.jpg" class="img_card activator">
+								<img src="<?= URL_MASTER ?>/images/web/financiacion/finan_codensa.jpg" class="img_card activator">
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">
@@ -66,7 +66,7 @@
 					<div class="col s12 m6">
 						<div class="card horizontal">
 							<div class="card-image">
-								<img src="../images/web/financiacion/finan_tarjeta.jpg" class="img_card activator">
+								<img src="<?= URL_MASTER ?>/images/web/financiacion/finan_tarjeta.jpg" class="img_card activator">
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">
@@ -88,7 +88,7 @@
 					<div class="col s12 m6">
 						<div class="card horizontal">
 							<div class="card-image">
-								<img src="../images/web/financiacion/finan_cesantias.jpg" class="img_card activator">
+								<img src="<?= URL_MASTER ?>/images/web/financiacion/finan_cesantias.jpg" class="img_card activator">
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">
@@ -114,7 +114,7 @@
 					<div class="col s12 m6">
 						<div class="card horizontal">
 							<div class="card-image">
-								<img src="../images/web/financiacion/finan_efectivo.jpg" class="img_card activator">
+								<img src="<?= URL_MASTER ?>/images/web/financiacion/finan_efectivo.jpg" class="img_card activator">
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">
@@ -158,7 +158,7 @@
 					<div class="col s12 m6">
 						<div class="card horizontal">
 							<div class="card-image">
-								<img src="../images/web/financiacion/finan_fincomercio.jpg" class="img_card activator">
+								<img src="<?= URL_MASTER ?>/images/web/financiacion/finan_fincomercio.jpg" class="img_card activator">
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">
@@ -191,7 +191,7 @@
 					<div class="col s12 m6">
 						<div class="card horizontal">
 							<div class="card-image">
-								<img src="../images/web/financiacion/finan_pichincha.jpg" class="img_card activator">
+								<img src="<?= URL_MASTER ?>/images/web/financiacion/finan_pichincha.jpg" class="img_card activator">
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">
@@ -222,7 +222,7 @@
 					<div class="col s12 m6">
 						<div class="card horizontal">
 							<div class="card-image">
-								<img src="../images/web/financiacion/finan_itau.jpg" class="img_card activator">
+								<img src="<?= URL_MASTER ?>/images/web/financiacion/finan_itau.jpg" class="img_card activator">
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">
@@ -256,7 +256,7 @@
 					<div class="col s12 m6">
 						<div class="card horizontal">
 							<div class="card-image">
-								<img src="../images/web/financiacion/finan_icetex.jpg" class="img_card activator">
+								<img src="<?= URL_MASTER ?>/images/web/financiacion/finan_icetex.jpg" class="img_card activator">
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">
@@ -279,7 +279,7 @@
 					<div class="col s12 m6">
 						<div class="card horizontal">
 							<div class="card-image">
-								<img src="../images/web/financiacion/finan_urep.jpg" class="img_card activator">
+								<img src="<?= URL_MASTER ?>/images/web/financiacion/finan_urep.jpg" class="img_card activator">
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">

@@ -1,4 +1,7 @@
 <?php 
+define('URL_MASTER','//localhost/WEB/new_urep');
+// define('URL_MASTER','//campusvirtualurepublicana.edu.co/new_urep');
+// define('URL_MASTER','//urepublicana.edu.co');
 
 class get_xml {
 

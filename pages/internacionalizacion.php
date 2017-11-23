@@ -7,14 +7,14 @@
 </head>
 <body id="body_urep">
 	<?php require_once('../plantilla/menu.php'); ?>
-	<div class="breadcrumb"> <a href="../pages/"> Inicio </a> > <a href="internacionalizacion.php"> Internacionalización </a></div>
+	<div class="breadcrumb"> <a href="<?= URL_MASTER ?>/pages/"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/internacionalizacion.php"> Internacionalización </a></div>
 
 
 	<!-- ENLACES RAPIDOS - ATAJOS -->
 	<div class="container">
 		<div class="row center">
 			<h4>OFICINA DE RELACIONES INTERNACIONALES</h4>
-			<img src="../images/web/ori/banner_ori.jpg" width="100%">
+			<img src="<?= URL_MASTER ?>/images/web/ori/banner_ori.jpg" width="100%">
 		</div>
 
 		<div class="row lnk_first">
@@ -22,28 +22,28 @@
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#quienes_somos">
-					<img class="atajo" name="../images/web/ori/inter_somos_1.png" src="../images/web/ori/inter_somos.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/ori/inter_somos_1.png" src="<?= URL_MASTER ?>/images/web/ori/inter_somos.png">
 					<p>Quiénes Somos</p>
 				</span>
 			</div>
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#estudiantes_urep">
-					<img class="atajo" name="../images/web/ori/inter_student_1.png" src="../images/web/ori/inter_student.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/ori/inter_student_1.png" src="<?= URL_MASTER ?>/images/web/ori/inter_student.png">
 					<p>Estudiantes Republicanos</p>
 				</span>
 			</div>
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#estudiantes_ext">
-					<img class="atajo" name="../images/web/ori/inter_student_ext_1.png" src="../images/web/ori/inter_student_ext.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/ori/inter_student_ext_1.png" src="<?= URL_MASTER ?>/images/web/ori/inter_student_ext.png">
 					<p>Estudiantes Externos</p>
 				</span>
 			</div>
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#becas">
-					<img class="atajo" name="../images/web/ori/inter_becas_1.png" src="../images/web/ori/inter_becas.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/ori/inter_becas_1.png" src="<?= URL_MASTER ?>/images/web/ori/inter_becas.png">
 					<p>Becas</p>
 				</span>
 			</div>
@@ -138,7 +138,7 @@
 											<li><b>6. </b>Ser mayor de edad</li>
 										</ul>
 										<center>
-											<a class="waves-effect waves-light btn red darken-3" href="../images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
+											<a class="waves-effect waves-light btn red darken-3" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES
 											</a>
 										</center>
@@ -149,7 +149,7 @@
 								<div id="como_aplicar_urep" class="content_inter ocultar">
 									<p>
 										<ul>
-											<li> <b>1 </b> Diligenciar el <a href="../images/web/ori/formatos/Formato Estudiantes Republicana.xlsx"> Formato para solicitar movilidad académica de estudiantes de la Corporación Universitaria Republicana</a> o el <a href="../images/web/ori/formatos/Formato Estancia Investigación.xlsx">Formato de aplicación de estudiantes para estancias de investigación </a>, dependiendo del tipo de movilidad al que vayas aplicar.
+											<li> <b>1 </b> Diligenciar el <a href="<?= URL_MASTER ?>/images/web/ori/formatos/Formato Estudiantes Republicana.xlsx"> Formato para solicitar movilidad académica de estudiantes de la Corporación Universitaria Republicana</a> o el <a href="<?= URL_MASTER ?>/images/web/ori/formatos/Formato Estancia Investigación.xlsx">Formato de aplicación de estudiantes para estancias de investigación </a>, dependiendo del tipo de movilidad al que vayas aplicar.
 											<li> <b>2 </b>Fotocopia de la Cédula de Ciudadanía</li>
 											<li> <b>3 </b>Fotocopia del pasaporte</li>
 											<li> <b>4 </b>Hoja de vida académica (debe incluir información como matrícula de honor, becas, investigaciones, etc) y laboral (información si ha trabajado y/o trabaja actualmente). La hoja de vida debe incluir foto reciente.</li>
@@ -164,7 +164,7 @@
 										</ul>
 
 										<center>
-											<a class="waves-effect waves-light btn red darken-3" href="../images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
+											<a class="waves-effect waves-light btn red darken-3" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES
 											</a>
 										</center>
@@ -185,7 +185,7 @@
 										</ul>
 
 										<center>
-											<a class="waves-effect waves-light btn red darken-3" href="../images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
+											<a class="waves-effect waves-light btn red darken-3" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES
 											</a>
 										</center>
@@ -207,22 +207,22 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td><img src="../images/web/ori/argentina.jpg" width="100%"></td>
+													<td><img src="<?= URL_MASTER ?>/images/web/ori/argentina.jpg" width="100%"></td>
 													<td><a target="_blank" href="http://visaestudiantil.gob.ar/"> Argentina </a></td>
 												</tr>
 
 												<tr>
-													<td><img src="../images/web/ori/peru.jpg" width="100%"></td>
+													<td><img src="<?= URL_MASTER ?>/images/web/ori/peru.jpg" width="100%"></td>
 													<td><a target="_blank" href="http://www.embajadadelperu.org.co/index.html">Perú </a></td>
 												</tr>
 
 												<tr>
-													<td><img src="../images/web/ori/espana.jpg" width="100%"></td>
+													<td><img src="<?= URL_MASTER ?>/images/web/ori/espana.jpg" width="100%"></td>
 													<td><a target="_blank" href="http://www.exteriores.gob.es/Consulados/BOGOTA/es/InformacionParaExtranjeros/Paginas/RequisitosDeEntrada.aspx">España </a></td>
 												</tr>
 
 												<tr>
-													<td><img src="../images/web/ori/eeuu.jpg" width="100%"></td>
+													<td><img src="<?= URL_MASTER ?>/images/web/ori/eeuu.jpg" width="100%"></td>
 													<td><a target="_blank" href="https://travel.state.gov/content/visas/en/study-exchange/student.html">Estados Unidos</a></td>
 												</tr>
 											</tbody>
@@ -241,7 +241,7 @@
 										</ul>
 
 										<center>
-											<a class="waves-effect waves-light btn red darken-3" href="../images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
+											<a class="waves-effect waves-light btn red darken-3" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES
 											</a>
 										</center>
@@ -270,7 +270,7 @@
 
 								<!-- INFORMACION GENERAL -->
 								<div id="cursos_idext" class="content_inter">
-									<img src="../images/web/ori/ccls.png" style="float: left; margin: 10px; width: 150px">
+									<img src="<?= URL_MASTER ?>/images/web/ori/ccls.png" style="float: left; margin: 10px; width: 150px">
 									<p>
 										El Centro Cultural de Estudios de Idiomas – CCLS–  es una escuela de idiomas en Miami que ofrece programas intensivos y semi intensivos de inglés y desde el año 2013 está comprometida con la Corporación Universitaria Republicana para ser puente de oportunidades y facilitar el perfeccionamiento del idioma por parte de los estudiantes, docentes, egresados y personal administrativo de la Corporación.<br><br>
 										En una agencia fundada en 1993, ha enseñado inglés, portugués y español a cientos de miles de estudiantes en su sede de Miami, así como en instituciones educativas de otros países. CCLS cuenta con más de 700 escuelas afiliadas en todo el mundo.<br><br>
@@ -301,7 +301,7 @@
 
 														<tr>
 															<td>
-																<img src="../images/web/ori/BRITISH_COUNCIL.png" width="100%">
+																<img src="<?= URL_MASTER ?>/images/web/ori/BRITISH_COUNCIL.png" width="100%">
 																<b>BRITISH COUNCIL</b>
 															</td>
 															<td></td>
@@ -315,7 +315,7 @@
 
 														<tr>
 															<td>
-																<img src="../images/web/ori/COLOMBO_AMERICANO.png" width="100%">
+																<img src="<?= URL_MASTER ?>/images/web/ori/COLOMBO_AMERICANO.png" width="100%">
 																<b>COLOMBO AMERICANO</b>
 															</td>
 															<td></td>
@@ -329,7 +329,7 @@
 
 														<tr>
 															<td>
-																<img src="../images/web/ori/INSTITUTO_SMART.png" width="100%">
+																<img src="<?= URL_MASTER ?>/images/web/ori/INSTITUTO_SMART.png" width="100%">
 																<b>INSTITUTO SMART</b>
 															</td>
 															<td></td>
@@ -340,7 +340,7 @@
 
 														<tr>
 															<td>
-																<img src="../images/web/ori/INSTITUTO_MULTILINGUA.PNG" width="100%">
+																<img src="<?= URL_MASTER ?>/images/web/ori/INSTITUTO_MULTILINGUA.PNG" width="100%">
 																<b>INSTITUTO MULTILINGUA</b>
 															</td>
 															<td></td>
@@ -351,7 +351,7 @@
 
 														<tr>
 															<td>
-																<img src="../images/web/ori/ETS.png" width="100%">
+																<img src="<?= URL_MASTER ?>/images/web/ori/ETS.png" width="100%">
 																<b>ETS</b>
 															</td>
 															<td></td>
@@ -362,7 +362,7 @@
 
 														<tr>
 															<td>
-																<img src="../images/web/ori/ALIANZA_FRANCESA.png" width="100%">
+																<img src="<?= URL_MASTER ?>/images/web/ori/ALIANZA_FRANCESA.png" width="100%">
 																<b>ALIANZA FRANCESA</b>
 															</td>
 															<td></td>
@@ -432,14 +432,14 @@
 								<div id="requisitos_urep_ext" class="content_inter ocultar">
 									<p>
 										<ul>
-											<li><b>1.</b> Diligencia el <a href="../images/web/ori/formatos/Formato Estudiantes Externos.xlsx">Formato de aplicación para estudiantes visitantes</a> o el <a href="../images/web/ori/formatos/Formato Estancia Investigación.xlsx">Formato de aplicación de estudiantes para estancias de investigación</a>, dependiendo del tipo de movilidad al que vayas aplicar.</li>
+											<li><b>1.</b> Diligencia el <a href="<?= URL_MASTER ?>/images/web/ori/formatos/Formato Estudiantes Externos.xlsx">Formato de aplicación para estudiantes visitantes</a> o el <a href="<?= URL_MASTER ?>/images/web/ori/formatos/Formato Estancia Investigación.xlsx">Formato de aplicación de estudiantes para estancias de investigación</a>, dependiendo del tipo de movilidad al que vayas aplicar.</li>
 											<li><b>2.</b> La ORI de tu Universidad debe enviarnos una carta de tu candidatura como estudiante que desea hacer un intercambio en la Corporación. </li>
 											<li><b>3.</b> Debes elaborar una carta explicando las razones por las cuales deseas realizar el intercambio académico en la Corporación, esta carta debes entregarla a la ORI de tu Universidad y ella debe hacérnosla llegar junto con los demás documentos.</li>
 										</ul>
 										<h5 class="center"> Si quieres conocer la información completa, consulta el Manual para estudiantes visitantes</h5>
 
 										<center>
-											<a target="_blank" href="../images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
+											<a target="_blank" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES VISITANTES
 											</a>
 										</center>
@@ -457,7 +457,7 @@
 
 										<h5 class="center"> Si quieres conocer la información completa, consulta el Manual para estudiantes visitantes</h5>
 										<center>
-											<a target="_blank" href="../images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
+											<a target="_blank" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES VISITANTES
 											</a>
 										</center>
@@ -478,7 +478,7 @@
 								<div class="col s12 m6">
 									<div class="card horizontal">
 										<div class="card-image">
-											<img src="../images/programas/<?= $programa->snies ?>.jpg" class="img_card">
+											<img src="<?= URL_MASTER ?>/images/programas/<?= $programa->snies ?>.jpg" class="img_card">
 										</div>
 										<div class="card-stacked">
 											<div class="card-content">
@@ -486,7 +486,7 @@
 												<p class="autor_card"><b>Nivel Académico: </b><?= $programa->nivel_academico ?></p><br>
 											</div>
 											<div class="card-action">
-												<a href="detalle_programa.php?id=<?= $programa->snies ?>" class="enlace">Mas información</a>
+												<a href="<?= URL_MASTER ?>/pages/programas/<?= $programa->nivel_academico."/".$programa->name ?>" class="enlace">Mas información</a>
 											</div>
 										</div>
 									</div>
@@ -568,7 +568,7 @@
 
 										<h5 class="center"> Si quieres conocer la información completa, consulta el Manual para estudiantes visitantes</h5>
 										<center>
-											<a target="_blank" href="../images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
+											<a target="_blank" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES VISITANTES
 											</a>
 										</center>
@@ -583,7 +583,7 @@
 										
 										<h5 class="center"> Si quieres conocer la información completa, consulta el Manual para estudiantes visitantes</h5>
 										<center>
-											<a target="_blank" href="../images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
+											<a target="_blank" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES VISITANTES
 											</a>
 										</center>
@@ -636,7 +636,7 @@
 										<br>
 										
 										<h5>RESIDENCIA UNIVERSITARIA CASA ESCOBAR</h5>
-										<img src="../images/web/ori/CASA ESCOBAR.jpg" style="float: left; margin: 10px;" width="200">
+										<img src="<?= URL_MASTER ?>/images/web/ori/CASA ESCOBAR.jpg" style="float: left; margin: 10px;" width="200">
 										<b> Responsable: </b> James Stewart Escobar Saenz <br>
 										<b> Teléfono: </b> (57 -1) 342 81 02 <br>
 										<b> Celular: </b> (+57) 3102342032 Dirección: </b> Calle 7 # 5 74 <br>
@@ -647,7 +647,7 @@
 										<br>
 
 										<h5>RESIDENCIAS UNIVERSITARIAS RESIDENCIAL 10</h5>
-										<img src="../images/web/ori/R10.jpg" style="float: left; margin: 10px;" width="200">
+										<img src="<?= URL_MASTER ?>/images/web/ori/R10.jpg" style="float: left; margin: 10px;" width="200">
 										<b> Responsable: </b> Alejandro Rueda / Juan Sebastián Pescador <br>
 										<b> Celular: </b> (+57) 3125442582 / (+57) 3132864655 <br>
 										<b> Dirección: </b> Calle 12d # 4 10 / Calle 12c # 3 64 <br>
@@ -657,7 +657,7 @@
 										<b> Valor Promedio Mensual: </b> Entre $525.000 (COP) y $825.000 (COP) en precio incluye los servicios de agua, luz, Tv cable, Netflix e internet WIFI, servicio de limpieza y seguridad. No hay servicio de lavandería tiene convenio con una empresa de lavado.<br>
 										<br>
 										<h5>RESIDENCIA UNIVERSITARIA ESSTUDIA</h5>
-										<img src="../images/web/ori/ESSTUDIA.jpg" style="float: left; margin: 10px;" width="200">
+										<img src="<?= URL_MASTER ?>/images/web/ori/ESSTUDIA.jpg" style="float: left; margin: 10px;" width="200">
 										<b> Responsable: </b> Claudia Torres <br>
 										<b> Teléfono: </b> (57 1) 432-3944 <br>
 										<b> Celular: </b> (+57) 3103053475 <br>
@@ -667,7 +667,7 @@
 										<b> Servicios Ofrecidos: </b> Conserje 24/7, manual de convivencia, accesos controlados con tarjeta electrónica, cajilla de seguridad en cada habitación, circuito cerrado de TV, escaleras de emergencia, red contra incendios y detectores de humo en habitaciones y zonas comunes. Servicio de citófono, planta eléctrica y servicio médico de emergencia. Se incluye desayuno y cena, acceso a lavandería comunal, incluye servicios públicos (agua y energía), aseo a la habitación una vez por semana. Acompañamiento integral (contacto entre padres, estudiantes y universidades). Gimnasio, zonas comunes de estudio, parqueadero de bicicletas, espacios de entretenimiento e integración.<br>
 										<br>
 										<h5>RESIDENCIA UNIVERSITARIA SC HOUSE</h5>
-										<img src="../images/web/ori/SC HOUSE.jpg" style="float: left; margin: 10px;" width="200">
+										<img src="<?= URL_MASTER ?>/images/web/ori/SC HOUSE.jpg" style="float: left; margin: 10px;" width="200">
 										<b> Responsable: </b> Daniel Chavarro <br>
 										<b> Teléfono: </b> (57 1) 4755056 <br>
 										<b> Dirección: </b> Carrera 3 #11 32<br>
@@ -699,7 +699,7 @@
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
-									<img src="../images/web/ori/becas/DAAD.jpg" class="img_card">
+									<img src="<?= URL_MASTER ?>/images/web/ori/becas/DAAD.jpg" class="img_card">
 								</div>
 								<div class="card-action">
 									<a target="_blank" style="color: #A2121C;" href="http://www.daad.co/es/12365/index.html">DAAD</a>
@@ -710,7 +710,7 @@
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
-									<img src="../images/web/ori/becas/FUN_CAROLINA.jpg" class="img_card">
+									<img src="<?= URL_MASTER ?>/images/web/ori/becas/FUN_CAROLINA.jpg" class="img_card">
 								</div>
 								<div class="card-action">
 									<a target="_blank" style="color: #A2121C;" href="http://www.fundacioncarolina.es/formacion/presentacion/">Fundación Carolina</a>
@@ -721,7 +721,7 @@
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
-									<img src="../images/web/ori/becas/FULBRIGHT.jpg" class="img_card">
+									<img src="<?= URL_MASTER ?>/images/web/ori/becas/FULBRIGHT.jpg" class="img_card">
 								</div>
 								<div class="card-action">
 									<a target="_blank" style="color: #A2121C;" href="http://www.fulbright.edu.co/"> Fullbrigth </a>
@@ -732,7 +732,7 @@
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
-									<img src="../images/web/ori/becas/ICETEX.jpg" class="img_card">
+									<img src="<?= URL_MASTER ?>/images/web/ori/becas/ICETEX.jpg" class="img_card">
 								</div>
 								<div class="card-action">
 									<a target="_blank" style="color: #A2121C;" href="https://www.icetex.gov.co/dnnpro5/es-co/becas/becasenelexterior/becasvigentes.aspx"> ICETEX </a>
@@ -743,7 +743,7 @@
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
-									<img src="../images/web/ori/becas/CAMPUS_FRANCE.jpg" class="img_card">
+									<img src="<?= URL_MASTER ?>/images/web/ori/becas/CAMPUS_FRANCE.jpg" class="img_card">
 								</div>
 								<div class="card-action">
 									<a target="_blank" style="color: #A2121C;" href="http://www.colombie.campusfrance.org/"> Campus France </a>
@@ -754,7 +754,7 @@
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
-									<img src="../images/web/ori/becas/COLFUTURO.jpg" class="img_card">
+									<img src="<?= URL_MASTER ?>/images/web/ori/becas/COLFUTURO.jpg" class="img_card">
 								</div>
 								<div class="card-action">
 									<a target="_blank" style="color: #A2121C;" href="https://www.colfuturo.org/"> Colfuturo </a>
@@ -765,7 +765,7 @@
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
-									<img src="../images/web/ori/becas/COLCIENCIAS.jpg" class="img_card">
+									<img src="<?= URL_MASTER ?>/images/web/ori/becas/COLCIENCIAS.jpg" class="img_card">
 								</div>
 								<div class="card-action">
 									<a target="_blank" style="color: #A2121C;" href="http://www.colciencias.gov.co/"> Colciencias </a>
@@ -776,7 +776,7 @@
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
-									<img src="../images/web/ori/becas/AUALCPI.jpg" class="img_card">
+									<img src="<?= URL_MASTER ?>/images/web/ori/becas/AUALCPI.jpg" class="img_card">
 								</div>
 								<div class="card-action">
 									<a target="_blank" style="color: #A2121C;" href="http://www.aualcpi.net/"> Aualcpi </a>

@@ -5,7 +5,7 @@
 </head>
 <body id="body_urep">
   <?php require_once('../plantilla/menu.php'); ?>
-  <div class="breadcrumb"><a href="index.php"> Inicio </a> > <a href="admisiones.php"> Admisiones </a></div>
+  <div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/index.php"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/admisiones.php"> Admisiones </a></div>
 
 
 
@@ -16,7 +16,7 @@
     <div class="container">
       <div class="row">
         <div class="col s12 m12">
-          <img src="../images/web/expo_est/banner.png" width="100%">
+          <img src="<?= URL_MASTER ?>/images/web/expo_est/banner.png" width="100%">
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@
 
     <div class="row">
       <div class="col s12 m6 info_expo">
-        <img src="../images/web/expo_est/expo_estudiantes.png" class="expo_estudiantes">
+        <img src="<?= URL_MASTER ?>/images/web/expo_est/expo_estudiantes.png" class="expo_estudiantes">
         <b>Visítanos en Expo-estudiante</b>
         <br><br>
         Del 24 al 27 de Octubre / Stand 232 pabellón 8, nivel 2.<br>
@@ -112,7 +112,7 @@
     </div>
 
     <div class="div_chica">
-      <img src="../images/web/expo_est/chica.png" class="chica">   
+      <img src="<?= URL_MASTER ?>/images/web/expo_est/chica.png" class="chica">   
     </div>
 
   </div>

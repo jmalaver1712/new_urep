@@ -1,6 +1,6 @@
 <?php
-  if (!isset($_POST['id'])){
-    print('<meta http-equiv="refresh" content="0.1; url=../pages/noticias_eventos.php" />');
+  if (!isset($_GET['id'])){
+    print('<meta http-equiv="refresh" content="0.1; url=<?= URL_MASTER ?>/pages/noticias_eventos.php" />');
     exit();
   }
 ?>
@@ -9,14 +9,14 @@
 <head>
   <?php require_once('../plantilla/head.php'); 
 
-  $noticia_evento = $get_xml->reg_detail_xml("id" ,$_POST['id'] ,"noticias_eventos.xml", 1);
-  $noticia_evento_galeria = $get_xml->reg_detail_xml("id_noticia_evento" ,$_POST['id'] ,"noticias_eventos_galeria.xml", null);
+  $noticia_evento = $get_xml->reg_detail_xml("id" ,$_GET['id'] ,"noticias_eventos.xml", 1);
+  $noticia_evento_galeria = $get_xml->reg_detail_xml("id_noticia_evento" ,$_GET['id'] ,"noticias_eventos_galeria.xml", null);
 
   ?>
 </head>
 <body id="body_urep">
 <?php require_once('../plantilla/menu.php'); ?>
-<div class="breadcrumb"><a href="../pages/"> Inicio </a> > <a class="post_variable" title="../pages/noticias_eventos.php" name="<?= $noticia_evento[0]->tipo ?>" href="#!"><?= $noticia_evento[0]->tipo ?></a> > <?= $noticia_evento[0]->titular ?></div>
+<div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/noticias_eventos.php" >Publicaciones</a> > <a href="<?= URL_MASTER ?>/pages/publicaciones/<?= $noticia_evento[0]->tipo ?>" ><?= $noticia_evento[0]->tipo ?></a> > <?= $noticia_evento[0]->titular ?></div>
   <!-- CONTENIDO -->
   <div class="container">
     <center>
@@ -24,7 +24,7 @@
     </center>
     <div class="noticias_all">
       <div>
-        <a><img src="../images/noticias_eventos/<?= $noticia_evento[0]->imagen ?>"></a>
+        <a><img src="<?= URL_MASTER ?>/images/noticias_eventos/<?= $noticia_evento[0]->imagen ?>"></a>
       </div>
       <div class="resumen_noticia" >
         <p>
@@ -53,7 +53,7 @@
             if($galeria->tipo_galeria == "imagen"){
           ?>
             <div class="item">
-              <img src="../images/noticias_eventos/galeria/<?= $galeria->url_galeria ?>">
+              <img src="<?= URL_MASTER ?>/images/noticias_eventos/galeria/<?= $galeria->url_galeria ?>">
             </div>
           <?php
             }

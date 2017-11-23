@@ -6,7 +6,7 @@
   ?>
   <div class="row" id="main_menu">
     <div class="col s4 m2 l2 right-align menu_nav">
-      <a href="../pages/"> <img src="../images/web/logo.png" class="logo_urep"> </a>
+      <a href="<?= URL_MASTER ?>/pages/"> <img src="<?= URL_MASTER ?>/images/web/logo.png" class="logo_urep"> </a>
     </div>
 
     <div class="col s6 m9 l4 left-align menu_nav">
@@ -28,8 +28,8 @@
           </ul>
           <ul class="right nav_urep nav_aux">
             <li><a class="enlace_menu" href="#!" name="#servicios">Servicios</a></li>
-            <li><a href="../internacionalizacion/">Internacionalización</a></li>
-            <li><a href="../pages/investigacion.php">Investigación</a></li>
+            <li><a href="<?= URL_MASTER ?>/pages/internacionalizacion/">Internacionalización</a></li>
+            <li><a href="<?= URL_MASTER ?>/pages/investigacion.php">Investigación</a></li>
             <li><a target="_blank" href="http://republicanaradio.com/">Republicana Radio</a></li>
           </ul>
         </div>
@@ -37,7 +37,7 @@
 
         <!-- MOBILE MENU -->
         <ul id="menu_mobile" class="side-nav center-align">
-          <a href="../pages/"><img src="../images/web/menu/logo.png" width="30%"></a>
+          <a href="<?= URL_MASTER ?>/pages/"><img src="<?= URL_MASTER ?>/images/web/menu/logo.png" width="30%"></a>
 
           <li class="no-padding">
             <ul class="collapsible collapsible-accordion">
@@ -45,17 +45,17 @@
                 <a class="collapsible-header waves-effect">Nuestra Institución</a>
                 <div class="collapsible-body nivel_2">
                   <ul>
-                    <li><a href="../pages/nosotros.php">Nosotros</a></li>
-                    <li><a target="_blank" href="../images/documentos/nuestra_institucion/Estructura-Organizacional.pdf">Organigrama</a></li>
-                    <li><a target="_blank" href="../images/documentos/nuestra_institucion/PEI.pdf">PEI</a></li>
-                    <li><a target="_blank" href="../images/documentos/nuestra_institucion/planDesarrollo.pdf">Plan de Desarrollo Institucional</a></li>
-                    <li><a target="_blank" href="../images/documentos/nuestra_institucion/Estatutos.pdf">Estatutos Generales</a></li>
-                    <li><a target="_blank" href="../images/documentos/nuestra_institucion/Reglamento-Estudiantil-Ajustado-Mz-19-de-2015.pdf">Reglamento Estudiantil</a></li>
-                    <li><a target="_blank" href="../images/documentos/nuestra_institucion/Reglamento-Estudiantil-Semestralizado.pdf">Reglamento Estudiantil Semestralizado</a></li>
-                    <li><a target="_blank" href="../images/documentos/nuestra_institucion/Reglamento-Docente-Ajustado-Marzo-19-2015.pdf">Reglamento Docente</a></li>
+                    <li><a href="<?= URL_MASTER ?>/pages/nosotros.php">Nosotros</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Estructura-Organizacional.pdf">Organigrama</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/PEI.pdf">PEI</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/planDesarrollo.pdf">Plan de Desarrollo Institucional</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Estatutos.pdf">Estatutos Generales</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Reglamento-Estudiantil-Ajustado-Mz-19-de-2015.pdf">Reglamento Estudiantil</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Reglamento-Estudiantil-Semestralizado.pdf">Reglamento Estudiantil Semestralizado</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Reglamento-Docente-Ajustado-Marzo-19-2015.pdf">Reglamento Docente</a></li>
                     <li><a target="_blank" href="http://urepublicana.edu.co/convocatoria-docente/">Convocatoria Docente</a></li>
-                    <li><a target="_blank" href="../images/documentos/nuestra_institucion/pecuniarios2017.pdf">Valores y Servicios Académicos 2017</a></li>
-                    <li><a target="_blank" href="../images/documentos/nuestra_institucion/PersoneriaJuridica.pdf">Personeria Jurídica</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/pecuniarios2017.pdf">Valores y Servicios Académicos 2017</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/PersoneriaJuridica.pdf">Personeria Jurídica</a></li>
                   </ul>
                 </div>
               </li>
@@ -70,11 +70,11 @@
                   <ul>
                     <!-- <li><a target="_blank" href="http://urepublicana.edu.co/wp-content/uploads/2017/07/calendarioAcademico.pdf">Calendario Académico</a></li> -->
                     <li><a target="_blank" href="http://urepublicana.edu.co/images/noticias_eventos/calendario%20Academico%20(modificacion%202017-2).pdf">Calendario Académico</a></li>
-                    <li><a target="_blank" href="../images/documentos/estudiantes/MANUAL%20DE%20PROCEDIMIENTO.pdf">Manual de procedimientos para matrícula</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/estudiantes/MANUAL%20DE%20PROCEDIMIENTO.pdf">Manual de procedimientos para matrícula</a></li>
                     <li><a target="_blank" href="http://academiaurepublicana.org/ArKa/test/actualiza1.php">Actualización de datos - Formulario Financiero</a></li>
                     <li><a target="_blank" href="http://urepublicana.edu.co/estudiantes/egresados/">Egresados</a></li>
                     <li><a target="_blank" href="http://urepublicana.edu.co/flexibilidad-academica/">Flexibilidad Académica</a></li>
-                    <li><a target="_blank" href="../images/documentos/estudiantes/Requisitos_Trabajo_de_Profundización-2017.pdf">Lineamientos Trabajo de Profundización</a></li>
+                    <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/estudiantes/Requisitos_Trabajo_de_Profundización-2017.pdf">Lineamientos Trabajo de Profundización</a></li>
                   </ul>
                 </div>
               </li>
@@ -100,22 +100,12 @@
                                 if($programa_menu->nivel_academico == "Profesional"){
                                   ?>
                                   <li>
-                                    <!-- <a href="../pages/detalle_programa.php?id=<?= $programa_menu->snies ?>"> <?= $programa_menu->nombre_programa ?> </a> -->
-                                    <a class="post_variable" title="../programas/" name="<?= $programa_menu->snies ?>" href="#!"> <?= $programa_menu->nombre_programa ?> </a>
+                                    <a href="<?= URL_MASTER ?>/pages/programas/<?= $programa_menu->nivel_academico."/".$programa_menu->name ?>"> <?= $programa_menu->nombre_programa ?></a>
                                   </li>
                                   <?php
                                 }
                               }
                               ?>
-
-                              <!-- 
-                              <li><a target="_blank" href="http://urepublicana.edu.co/pregrado/derecho-2015/">Derecho</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/contaduria-publica-2015/">Contaduría Pública</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/finanzas-y-comercio-internacional-2015/">Finanzas y Comercio Internacional</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/trabajo-social-2015/">Trabajo Social</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/matematicas/">Matemáticas</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/landingSistemas.html">Ingeniería de Sistemas</a></li> 
-                            -->
                           </ul>
                         </div>
                       </li>
@@ -134,24 +124,12 @@
                               if($programa_menu->nivel_academico == "Posgrado"){
                                 ?>
                                 <li>
-                                  <!-- <a href="../pages/detalle_programa.php?id=<?= $programa_menu->snies ?>"> <?= $programa_menu->nombre_programa ?> </a> -->
-                                  <a class="post_variable" title="../programas/" name="<?= $programa_menu->snies ?>" href="#!"> <?= $programa_menu->nombre_programa ?> </a>
+                                  <a href="<?= URL_MASTER ?>/pages/programas/<?= $programa_menu->nivel_academico."/".$programa_menu->name ?>"> <?= $programa_menu->nombre_programa ?></a>
                                 </li>
                                 <?php
                               }
                             }
                             ?>
-                              <!-- 
-                              <li><a target="_blank" href="http://urepublicana.edu.co/derecho-publico/">Especialización en Derecho Público</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/derecho-notarial-y-de-registro/">Especialización en Derecho Notarial y  de Registro</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/derecho-procesal-constitucional/">Especialización en Derecho Procesal Constitucional</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/derecho-laboral/">Especialización en Derecho Laboral y Seguridad Social</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/especializacion-en-la-responsabilidad-penal-del-servidor-publico-y-los-delitos-contra-la-administracion-publica/">Especialización en Responsabilidad Penal del Servidor Público y los Delitos contra la Administración Pública</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/derecho-de-familia/">Especialización en Derecho de Familia</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/derecho-comercial/">Especialización en Derecho Comercial</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/especializacion-en-revisoria-fiscal/">Especialización en Revisoría Fiscal</a></li>
-                              <li><a target="_blank" href="http://urepublicana.edu.co/especializacion-en-investigacion-intervencion-y-gerencia-social/">Especialización en Intervención y Gerencia Social </a></li> 
-                            -->
                           </ul>
                         </div>
                       </li>
@@ -186,8 +164,8 @@
               <a class="collapsible-header waves-effect">Bienestar Universitario</a>
               <div class="collapsible-body nivel_2">
                 <ul>
-                  <li><a target="_blank" href="../images/web/bienestar/actividades_2017_2.pdf">Actividades 2017</a></li>
-                  <li><a target="_blank" href="../images/documentos/bienestar/Reglamento-Bienestar.pdf">Reglamento Bienestar Universitario</a></li>
+                  <li><a target="_blank" href="<?= URL_MASTER ?>/images/web/bienestar/actividades_2017_2.pdf">Actividades 2017</a></li>
+                  <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/bienestar/Reglamento-Bienestar.pdf">Reglamento Bienestar Universitario</a></li>
                 </ul>
               </div>
             </li>
@@ -195,8 +173,8 @@
         </li>
 
         <li><a target="_blank" href="http://republicanaradio.com/">Republicana Radio</a></li>
-        <li><a href="../pages/investigacion.php">Investigación</a></li>
-        <li><a href="../internacionalizacion/">Internacionalización</a></li>
+        <li><a href="<?= URL_MASTER ?>/pages/investigacion.php">Investigación</a></li>
+        <li><a href="<?= URL_MASTER ?>/pages/internacionalizacion/">Internacionalización</a></li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <li>
@@ -227,29 +205,29 @@
           <h3 class="center-align" >Nuestra Institución</h3>
           <div class="col m3">
             <ul>
-              <li><a href="../pages/nosotros.php">Nosotros</a></li>
-              <li><a target="_blank" href="../images/documentos/nuestra_institucion/Estructura-Organizacional.pdf">Organigrama</a></li>
-              <li><a target="_blank" href="../images/documentos/nuestra_institucion/PEI.pdf">PEI</a></li>
-              <li><a target="_blank" href="../images/documentos/nuestra_institucion/planDesarrollo.pdf">Plan de Desarrollo Institucional</a></li>
+              <li><a href="<?= URL_MASTER ?>/pages/nosotros.php">Nosotros</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Estructura-Organizacional.pdf">Organigrama</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/PEI.pdf">PEI</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/planDesarrollo.pdf">Plan de Desarrollo Institucional</a></li>
             </ul>
           </div>
           <div class="col m3">
             <ul>
-              <li><a target="_blank" href="../images/documentos/nuestra_institucion/Estatutos.pdf">Estatutos Generales</a></li>
-              <li><a target="_blank" href="../images/documentos/nuestra_institucion/Reglamento-Estudiantil-Ajustado-Mz-19-de-2015.pdf">Reglamento Estudiantil</a></li>
-              <li><a target="_blank" href="../images/documentos/nuestra_institucion/Reglamento-Estudiantil-Semestralizado.pdf">Reglamento Estudiantil Semestralizado</a></li>
-              <li><a target="_blank" href="../images/documentos/nuestra_institucion/Reglamento-Docente-Ajustado-Marzo-19-2015.pdf">Reglamento Docente</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Estatutos.pdf">Estatutos Generales</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Reglamento-Estudiantil-Ajustado-Mz-19-de-2015.pdf">Reglamento Estudiantil</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Reglamento-Estudiantil-Semestralizado.pdf">Reglamento Estudiantil Semestralizado</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/Reglamento-Docente-Ajustado-Marzo-19-2015.pdf">Reglamento Docente</a></li>
             </ul>
           </div>
           <div class="col m3">
             <ul>
               <li><a target="_blank" href="http://urepublicana.edu.co/convocatoria-docente/">Convocatoria Docente</a></li>
-              <li><a target="_blank" href="../images/documentos/nuestra_institucion/pecuniarios2017.pdf">Valores y Servicios Académicos 2017</a></li>
-              <li><a target="_blank" href="../images/documentos/nuestra_institucion/PersoneriaJuridica.pdf">Personeria Jurídica</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/pecuniarios2017.pdf">Valores y Servicios Académicos 2017</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/nuestra_institucion/PersoneriaJuridica.pdf">Personeria Jurídica</a></li>
             </ul>
           </div>
           <div class="col m3">
-            <img src="../images/web/menu/logo.png" width="60%">
+            <img src="<?= URL_MASTER ?>/images/web/menu/logo.png" width="60%">
           </div>
         </div>
       </div>
@@ -266,7 +244,7 @@
             <ul>
               <!-- <li><a target="_blank" href="http://urepublicana.edu.co/wp-content/uploads/2017/07/calendarioAcademico.pdf">Calendario Académico</a></li> -->
               <li><a target="_blank" href="http://urepublicana.edu.co/images/noticias_eventos/calendario%20Academico%20(modificacion%202017-2).pdf">Calendario Académico</a></li>
-              <li><a target="_blank" href="../images/documentos/estudiantes/MANUAL%20DE%20PROCEDIMIENTO.pdf">Manual de procedimientos para matrícula</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/estudiantes/MANUAL%20DE%20PROCEDIMIENTO.pdf">Manual de procedimientos para matrícula</a></li>
               <li><a target="_blank" href="http://academiaurepublicana.org/ArKa/test/actualiza1.php">Actualización de datos - Formulario Financiero</a></li>
             </ul>
 
@@ -275,11 +253,11 @@
             <ul>
               <li><a target="_blank" href="http://urepublicana.edu.co/estudiantes/egresados/">Egresados</a></li>
               <li><a target="_blank" href="http://urepublicana.edu.co/flexibilidad-academica/">Flexibilidad Académica</a></li>
-              <li><a target="_blank" href="../images/documentos/estudiantes/Requisitos_Trabajo_de_Profundización-2017.pdf">Lineamientos Trabajo de Profundización</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/estudiantes/Requisitos_Trabajo_de_Profundización-2017.pdf">Lineamientos Trabajo de Profundización</a></li>
             </ul>
           </div>
           <div class="col m4">
-            <img src="../images/web/menu/estudiante.png" width="60%">
+            <img src="<?= URL_MASTER ?>/images/web/menu/estudiante.png" width="60%">
           </div>
         </div>
       </div>
@@ -310,10 +288,7 @@
                 if($programa_menu->nivel_academico == "Profesional"){
                   ?>
                   <li>
-                    <!-- <a href="../pages/detalle_programa.php?id=<?= $programa_menu->snies ?>"> <?= $programa_menu->nombre_programa ?> </a> -->
-
-                    <a class="post_variable" title="../programas/" name="<?= $programa_menu->snies ?>" href="#!"> <?= $programa_menu->nombre_programa ?> </a>
-
+                    <a href="<?= URL_MASTER ?>/pages/programas/<?= $programa_menu->nivel_academico."/".$programa_menu->name ?>"> <?= $programa_menu->nombre_programa ?></a>
                   </li>
                   <?php
                 }
@@ -335,8 +310,7 @@
                 if($programa_menu->nivel_academico == "Posgrado"){
                   ?>
                   <li>
-                  <a class="post_variable" title="../programas/" name="<?= $programa_menu->snies ?>" href="#!"> <?= $programa_menu->nombre_programa ?> </a>
-                    <!-- <a href="../pages/detalle_programa.php?id=<?= $programa_menu->snies ?>"> <?= $programa_menu->nombre_programa ?> </a> -->
+                    <a href="<?= URL_MASTER ?>/pages/programas/<?= $programa_menu->nivel_academico."/".$programa_menu->name ?>"> <?= $programa_menu->nombre_programa ?></a>
                   </li>
                   <?php
                 }
@@ -374,7 +348,7 @@
 
           </div>
           <div class="col m2">
-            <img src="../images/web/menu/programas.png" width="100%">
+            <img src="<?= URL_MASTER ?>/images/web/menu/programas.png" width="100%">
           </div>
         </div>
       </div>
@@ -389,17 +363,17 @@
           <h3 class="center-align" >Bienestar Universitario</h3>
           <div class="col m5">
             <ul>
-              <li><a target="_blank" href="../images/web/bienestar/actividades_2017_2.pdf">Actividades 2017</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/web/bienestar/actividades_2017_2.pdf">Actividades 2017</a></li>
             </ul>
 
           </div>
           <div class="col m4">
             <ul>
-              <li><a target="_blank" href="../images/documentos/bienestar/Reglamento-Bienestar.pdf">Reglamento Bienestar Universitario</a></li>
+              <li><a target="_blank" href="<?= URL_MASTER ?>/images/documentos/bienestar/Reglamento-Bienestar.pdf">Reglamento Bienestar Universitario</a></li>
             </ul>
           </div>
           <div class="col m3">
-            <img src="../images/web/menu/bienestar.png" width="100%">
+            <img src="<?= URL_MASTER ?>/images/web/menu/bienestar.png" width="100%">
           </div>
         </div>
       </div>
@@ -422,7 +396,7 @@
             </ul>
           </div>
           <div class="col m3">
-            <img src="../images/web/menu/bienestar.png" width="100%">
+            <img src="<?= URL_MASTER ?>/images/web/menu/bienestar.png" width="100%">
           </div>
           <div class="col m2"></div>
         </div>
@@ -431,93 +405,16 @@
   </div>
 
   <!-- FORMULARIO DE INFORMACION -->
-  <div id="solicita_info" class="activa_form">
-
-        
-    <div id="btn_informacion" class="pulse">
-      <a class="tooltipped" data-position="right" data-delay="50" data-tooltip="¿Necesita información?">
-        <i class="material-icons">info_outline</i>
-        <p class="center">¿Necesita información?</p>
-      </a>
-      <i id="cerrar_info" class="material-icons tooltipped" data-position="right" data-delay="50" data-tooltip="Ocultar">close</i>
-    </div>
-        
-<!--     <div id="btn_informacion">Solicita Información 
-      <span id="flecha_up" class="ocultar" >&#9668;</span> 
-      <span id="flecha_down">&#9658;</span>
-    </div> --> 
-   
-
-    <div id="form_informacion" class="ocultar">
-      <div class="icon-block">
-        <form class="col s12" action="#" method="POST" id="form_info">
-          <label class="center" style="color: black;">
-            <h6>¿Necesita más información sobre su programa de interés?</h6>
-            <p class="center">Ingrese sus datos, un asesor se comunicará con usted.</p>
-          </label>
-          <div class="input-field col s12">
-            <input name="nom" id="nombres_apellidos" type="text" class="validate" autocomplete="off" required>
-            <label for="nombres_apellidos">* Nombres y Apellidos</label>
-          </div>
-
-          <div class="input-field col s6">
-            <input name="cel" id="celular" type="number" class="validate" autocomplete="off" required>
-            <label for="celular">* Celular</label>
-          </div>
-
-          <div class="input-field col s6">
-            <input name="ema" id="email" type="email" class="validate" autocomplete="off" required>
-            <label for="email">* Email</label>
-          </div>
-
-          <div class="input-field col s12">
-            <select name="pro" id="programa" required>
-            <option value="" disabled selected>Seleccione una...</option>
-              <optgroup label="Pregrado">
-              <?php
-                foreach ($todos_programas_menu as $programa_menu) {
-                  if($programa_menu->nivel_academico == "Profesional"){
-                    ?>
-                    <option value="<?= $programa_menu->id_mercadeo ?>"><?= $programa_menu->nombre_programa ?></option>
-                    <?php
-                  }
-                }
-              ?>
-              </optgroup>
-
-              <optgroup label="Posgrado">
-              <?php
-                foreach ($todos_programas_menu as $programa_menu) {
-                  if($programa_menu->nivel_academico == "Posgrado"){
-                    ?>
-                    <option value="<?= $programa_menu->id_mercadeo ?>"><?= $programa_menu->nombre_programa ?></option>
-                    <?php
-                  }
-                }
-              ?>
-              </optgroup>
-            </select>
-            <label>Programa de Interes</label>
-          </div>
-
-          <div class="input-field col s12">
-            <div class="g-recaptcha" data-sitekey="6LdpHhMTAAAAAEdufQp1hh8N02SrSedKBS5ZRqul" data-callback="correctCaptcha"></div>
-          </div>
-
-          <div class="input-field col s12">
-            <input type="checkbox" id="terminos" name="terminos" required /><label  id="terminos" for="terminos">
-            Si autorizo el uso de los datos por parte de la Corporación Universitaria Republicana</label>
-            <br><br>
-          </div>                  
-
-          <div class="input-field col s12">
-            <input id="btn_form_info" type="submit" class="btn boton_urep" value="Enviar" disabled="">
-            <br><br>
-          </div>
-
-        </form>
-      </div>
-    </div>
+  <div id="solicita_info" class="activa_form">  
+  <!--     
+  <div id="btn_informacion" class="pulse">
+    <a class="tooltipped" data-position="right" data-delay="50" data-tooltip="¿Necesita información?">
+      <i class="material-icons">info_outline</i>
+      <p class="center">¿Necesita información?</p>
+    </a>
+    <i id="cerrar_info" class="material-icons tooltipped" data-position="right" data-delay="50" data-tooltip="Ocultar">close</i>
+  </div> 
+  -->
   </div>
 
 

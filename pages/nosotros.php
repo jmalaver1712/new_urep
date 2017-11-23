@@ -10,7 +10,7 @@
 	<div class="container">
 		<div class="row center">
 			<div class="col s12">
-				<center><img src="../images/web/logo.png" width="25%"></center>
+				<center><img src="<?= URL_MASTER ?>/images/web/logo.png" width="25%"></center>
 				<h2>Nosotros</h2>
 			</div>
 		</div>

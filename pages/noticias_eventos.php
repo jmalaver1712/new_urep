@@ -7,17 +7,17 @@
 <body id="body_urep">
   <?php require_once('../plantilla/menu.php');
 
-  if (isset($_POST['id'])){
-    $todos_regs = $get_xml->reg_detail_xml("tipo", $_POST['id'], 'noticias_eventos.xml', null);
-    if($_POST['id'] == "evento"){
+  if (isset($_GET['id'])){
+    $todos_regs = $get_xml->reg_detail_xml("tipo", $_GET['id'], 'noticias_eventos.xml', null);
+    if($_GET['id'] == "evento"){
       $title = "Conoce todos los Eventos";
     }
-    if($_POST['id'] == "noticia"){
+    if($_GET['id'] == "noticia"){
       $title = "Conoce todas las Noticias";
     }
     ?>
 
-    <div class="breadcrumb"><a href="../pages/"> Inicio </a> > <a class="post_variable" title="../pages/noticias_eventos.php" name="<?= $_POST['id'] ?>" href="#!"><?= $_POST['id'] ?></a></div>
+    <div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/noticias_eventos.php" >Publicaciones</a> > <a href="<?= URL_MASTER ?>/pages/publicaciones/<?= $_GET['id'] ?>" ><?= $_GET['id'] ?></a></div>
     <!-- CONTENIDO -->
     <div class="container">
       <div class="row">
@@ -32,11 +32,12 @@
 
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img src="../images/noticias_eventos/<?= $reg->imagen; ?>" class="img_card activator">
+                <img src="<?= URL_MASTER ?>/images/noticias_eventos/<?= $reg->imagen; ?>" class="img_card activator">
               </div>
               <div class="card-content">
                 <span class="activator grey-text text-darken-4"><?= $reg->titular; ?><i class="material-icons right">remove_red_eye</i></span>
-                <p><a class="post_variable enlace" title="../noticias_y_eventos/" name="<?= $reg->id ?>" href="#!">Leer mas...</a></p>
+
+                <p><a class="enlace" href="<?= URL_MASTER ?>/pages/publicaciones/<?= $reg->tipo ?>/<?= $reg->id ?>" >Leer mas...</a></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><?= $reg->titular; ?><i class="material-icons right">close</i></span>
@@ -56,7 +57,7 @@
   else{
     ?>
 
-    <div class="breadcrumb"><a href="../pages/"> Inicio </a> > <a href="../pages/noticias_eventos.php">Noticias y Eventos</a></div>
+    <div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/noticias_eventos.php">Noticias y Eventos</a></div>
     <!-- CONTENIDO -->
     <div class="container">
       <div class="row">
@@ -67,14 +68,14 @@
         <div class="col s12 m6">
           <div class="card horizontal">
             <div class="card-image">
-              <img src="../images/noticias_eventos/noticias.jpg" class="img_card">
+              <img src="<?= URL_MASTER ?>/images/noticias_eventos/noticias.jpg" class="img_card">
             </div>
             <div class="card-stacked">
               <div class="card-content">
                 <h5>CONOCE TODAS LAS NOTICIAS</h5><br>
               </div>
               <div class="card-action">
-                <a class="post_variable enlace" title="../pages/noticias_eventos.php" name="noticia" href="#!">VER TODAS LAS NOTICIAS</a>
+                <a href="<?= URL_MASTER ?>/pages/publicaciones/noticia" >VER TODAS LAS NOTICIAS</a>
               </div>
             </div>
           </div>
@@ -83,14 +84,14 @@
         <div class="col s12 m6">
           <div class="card horizontal">
             <div class="card-image">
-              <img src="../images/noticias_eventos/eventos.jpg" class="img_card">
+              <img src="<?= URL_MASTER ?>/images/noticias_eventos/eventos.jpg" class="img_card">
             </div>
             <div class="card-stacked">
               <div class="card-content">
                 <h5>CONOCE TODOS LOS EVENTOS</h5><br>
               </div>
               <div class="card-action">
-                <a class="post_variable enlace" title="../pages/noticias_eventos.php" name="evento" href="#!">VER TODAS LOS EVENTOS</a>
+                <a href="<?= URL_MASTER ?>/pages/publicaciones/evento" >VER TODAS LOS EVENTOS</a>
               </div>
             </div>
           </div>

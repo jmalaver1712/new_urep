@@ -5,13 +5,13 @@
 </head>
 <body id="body_urep">
 	<?php require_once('../plantilla/menu.php'); ?>
-	<div class="breadcrumb"><a href="index.php"> Inicio </a> > <a href="biblioteca.php"> Biblioteca </a></div>
+	<div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/index.php"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/biblioteca.php"> Biblioteca </a></div>
 
 	<div class="container">
 		<div class="row center">
 			<div class="col s12">
 				<h2>Biblioteca</h2>
-				<img src="../images/web/biblioteca/banner_biblioteca.jpg" width="100%">
+				<img src="<?= URL_MASTER ?>/images/web/biblioteca/banner_biblioteca.jpg" width="100%">
 			</div>
 		</div>
 
@@ -21,7 +21,7 @@
 
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#biblio_general">
-					<img class="atajo" name="../images/web/biblioteca/bibilo_general_1.png" src="../images/web/biblioteca/bibilo_general.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/biblioteca/bibilo_general_1.png" src="<?= URL_MASTER ?>/images/web/biblioteca/bibilo_general.png">
 					<p>Información General</p>
 				</span>
 			</div>
@@ -29,7 +29,7 @@
 			<div class="col s4 m2">
 				<a target="_blank" href="http://republicana.redbiblio.net/">
 					<span>
-						<img class="atajo" name="../images/web/biblioteca/biblio_catalogo_1.png" src="../images/web/biblioteca/biblio_catalogo.png">
+						<img class="atajo" name="<?= URL_MASTER ?>/images/web/biblioteca/biblio_catalogo_1.png" src="<?= URL_MASTER ?>/images/web/biblioteca/biblio_catalogo.png">
 						<p>Catálogo en Línea</p>
 					</span>
 				</a>
@@ -37,21 +37,21 @@
 
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#biblio_servicios">
-					<img class="atajo" name="../images/web/biblioteca/biblio_servicios_1.png" src="../images/web/biblioteca/biblio_servicios.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/biblioteca/biblio_servicios_1.png" src="<?= URL_MASTER ?>/images/web/biblioteca/biblio_servicios.png">
 					<p>Servicios</p>
 				</span>
 			</div>
 
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#biblio_recursos">
-					<img class="atajo" name="../images/web/biblioteca/biblio_recursos_1.png" src="../images/web/biblioteca/biblio_recursos.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/biblioteca/biblio_recursos_1.png" src="<?= URL_MASTER ?>/images/web/biblioteca/biblio_recursos.png">
 					<p>Recursos Electronicos</p>
 				</span>
 			</div>
 
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#biblio_nuevas">
-					<img class="atajo" name="../images/web/biblioteca/biblio_adquiciciones_1.png" src="../images/web/biblioteca/biblio_adquiciciones.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/biblioteca/biblio_adquiciciones_1.png" src="<?= URL_MASTER ?>/images/web/biblioteca/biblio_adquiciciones.png">
 					<p>Nuevas Adquisiciones</p>
 				</span>
 			</div>
@@ -333,7 +333,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="#!">
-										<img src="../images/web/biblioteca/bd_libres/repeg.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/repeg.jpg">
 									</a>
 								</td>
 								<td><h6>RePEc. -Research Papers in Economics</h6>  
@@ -344,7 +344,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="#!">
-										<img src="../images/web/biblioteca/bd_libres/erevistas.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/erevistas.jpg">
 									</a>
 								</td>
 								<td><h6>E- REVISTAS</h6> 
@@ -356,7 +356,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://portal.pepsic.bvsalud.org/php/index.php">
-										<img src="../images/web/biblioteca/bd_libres/pepsic.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/pepsic.jpg">
 									</a>
 								</td>
 								<td><h6>PEPSIC</h6> 
@@ -367,7 +367,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.oapen.org/home">
-										<img src="../images/web/biblioteca/bd_libres/oapen.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/oapen.jpg">
 									</a>
 								</td>
 								<td><h6>OAPEN</h6> 
@@ -378,7 +378,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="#!">
-										<img src="../images/web/biblioteca/bd_libres/world_wide_science.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/world_wide_science.jpg">
 									</a>
 								</td>
 								<td><h6>Wiley Open Access</h6> 
@@ -389,7 +389,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="https://www.chemweb.com/">
-										<img src="../images/web/biblioteca/bd_libres/chemweb.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/chemweb.jpg">
 									</a>
 								</td>
 								<td><h6>CHEMWEB</h6> 
@@ -400,7 +400,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.suin-juriscol.gov.co/">
-										<img src="../images/web/biblioteca/bd_libres/suin_juriscol.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/suin_juriscol.jpg">
 									</a>
 								</td>
 								<td><h6>SUIN-JURISCOL</h6> 
@@ -411,7 +411,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="https://www.osti.gov/scitech/">
-										<img src="../images/web/biblioteca/bd_libres/scitech_connect.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/scitech_connect.jpg">
 									</a>
 								</td>
 								<td><h6>SCITECH CONNECT</h6> 
@@ -422,7 +422,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://eur-lex.europa.eu/homepage.html">
-										<img src="../images/web/biblioteca/bd_libres/eur_lex.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/eur_lex.jpg">
 									</a>
 								</td>
 								<td><h6>EUR-LEX</h6> 
@@ -433,7 +433,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="https://worldwidescience.org/">
-										<img src="../images/web/biblioteca/bd_libres/world_wide_science.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/world_wide_science.jpg">
 									</a>
 								</td>
 								<td><h6>WORLD WIDE SCIENCE ALLIANCE</h6> 
@@ -444,7 +444,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.artehistoria.com/">
-										<img src="../images/web/biblioteca/bd_libres/arte_historia.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/arte_historia.jpg">
 									</a>
 								</td>
 								<td><h6>ARTE HISTORIA</h6> 
@@ -455,7 +455,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.wipo.int/reference/es/">
-										<img src="../images/web/biblioteca/bd_libres/ompi.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/ompi.jpg">
 									</a>
 								</td>
 								<td><h6>OMPI</h6> 
@@ -466,7 +466,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.sic.gov.co/node/11443">
-										<img src="../images/web/biblioteca/bd_libres/cigepi.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/cigepi.jpg">
 									</a>
 								</td>
 								<td><h6>CIGEPI</h6> 
@@ -477,7 +477,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="https://www.redib.org/">
-										<img src="../images/web/biblioteca/bd_libres/redib.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/redib.jpg">
 									</a>
 								</td>
 								<td><h6>REDIB </h6> 
@@ -488,7 +488,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://oaji.net/">
-										<img src="../images/web/biblioteca/bd_libres/oaji.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/oaji.jpg">
 									</a>
 								</td>
 								<td><h6>OPEN ACADEMIC JOURNALS INDEX (OAJI)</h6> 
@@ -499,7 +499,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="https://scholar.google.es/">
-										<img src="../images/web/biblioteca/bd_libres/google_academic.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/google_academic.jpg">
 									</a>
 								</td>
 								<td><h6>GOOGLE ACADÉMICO </h6> 
@@ -510,7 +510,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.dotec-colombia.org/">
-										<img src="../images/web/biblioteca/bd_libres/dotec.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/dotec.jpg">
 									</a>
 								</td>
 								<td><h6>DOTEC-COLOMBIA </h6> 
@@ -521,7 +521,7 @@
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.citrevistas.cl/b2.htm">
-										<img src="../images/web/biblioteca/bd_libres/actualidad_iberoamericana.jpg">
+										<img src="<?= URL_MASTER ?>/images/web/biblioteca/bd_libres/actualidad_iberoamericana.jpg">
 									</a>
 								</td>
 								<td><h6>ACTUALIDAD IBEROAMERICANA </h6> 
@@ -536,10 +536,10 @@
 
 				<h5>Revistas Electrónicas de Acceso Libre </h5>
 				<div class="row center">
-					<a target="_blank" href="../images/web/biblioteca/revistasDerecho.pdf" class="waves-effect waves-light btn-large red darken-4" >Derecho</a>
-					<a target="_blank" href="../images/web/biblioteca/revistasTrabajoSocial.pdf" class="waves-effect waves-light btn-large red darken-4" >Trabajo Social</a>
-					<a target="_blank" href="../images/web/biblioteca/revistasFinanzasyContadura.pdf" class="waves-effect waves-light btn-large red darken-4" >Contaduria y finanzas</a>
-					<a target="_blank" href="../images/web/biblioteca/revistasIngenieriaMatematica.pdf" class="waves-effect waves-light btn-large red darken-4" >Ingenieria y Matematicas</a>
+					<a target="_blank" href="<?= URL_MASTER ?>/images/web/biblioteca/revistasDerecho.pdf" class="waves-effect waves-light btn-large red darken-4" >Derecho</a>
+					<a target="_blank" href="<?= URL_MASTER ?>/images/web/biblioteca/revistasTrabajoSocial.pdf" class="waves-effect waves-light btn-large red darken-4" >Trabajo Social</a>
+					<a target="_blank" href="<?= URL_MASTER ?>/images/web/biblioteca/revistasFinanzasyContadura.pdf" class="waves-effect waves-light btn-large red darken-4" >Contaduria y finanzas</a>
+					<a target="_blank" href="<?= URL_MASTER ?>/images/web/biblioteca/revistasIngenieriaMatematica.pdf" class="waves-effect waves-light btn-large red darken-4" >Ingenieria y Matematicas</a>
 				</div>
 			</div>
 
@@ -548,9 +548,9 @@
 				<h5>Nuevas Adquisiciones</h5>
 				
 				<div class="row center">
-					<a href="../images/web/biblioteca/Nuevas-Adquisiciones-Libros.pdf" class="waves-effect waves-light btn-large red darken-4" target="_blank" >Libros</a>
-					<a href="../images/web/biblioteca/Nuevas-Adquisiciones-Revistas.pdf" class="waves-effect waves-light btn-large red darken-4" target="_blank" >Revistas</a>
-					<a href="../images/web/biblioteca/Nuevas-Adquisiciones-Tesis.pdf" class="waves-effect waves-light btn-large red darken-4" target="_blank" >Trabajos de Grado</a>
+					<a href="<?= URL_MASTER ?>/images/web/biblioteca/Nuevas-Adquisiciones-Libros.pdf" class="waves-effect waves-light btn-large red darken-4" target="_blank" >Libros</a>
+					<a href="<?= URL_MASTER ?>/images/web/biblioteca/Nuevas-Adquisiciones-Revistas.pdf" class="waves-effect waves-light btn-large red darken-4" target="_blank" >Revistas</a>
+					<a href="<?= URL_MASTER ?>/images/web/biblioteca/Nuevas-Adquisiciones-Tesis.pdf" class="waves-effect waves-light btn-large red darken-4" target="_blank" >Trabajos de Grado</a>
 				</div>	
 
 			</div>

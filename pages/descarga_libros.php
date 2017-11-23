@@ -16,5 +16,5 @@ foreach ($todos_descargas_libros as $descargas_libros) {
 $data[] = $_POST;
 $descargas_libros = $get_xml->generar_xml($data, "descargas_libros");
 
-print("<meta http-equiv='refresh' content='0.1;url=libros.php'>");
+print("<meta http-equiv='refresh' content='0.1;url=".URL_MASTER."/pages/libros.php'>");
 ?>

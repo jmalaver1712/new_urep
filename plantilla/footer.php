@@ -5,16 +5,16 @@
      <div class="row">
 
       <div class="col s12 m3 l3 center-align">
-        <img src="../images/web/footer/logo_2.png" class="logo_footer">
+        <img src="<?= URL_MASTER ?>/images/web/footer/logo_2.png" class="logo_footer">
       </div>
 
       <div class="col s12 m9 l9">
         <div class="row center-align">
-          <a target="_blank" href="https://www.facebook.com/CorporacionUniversitariaRepublicana/" ><img src="../images/web/footer/facebook.png" class="social_urep"></a>
-          <a target="_blank" href="https://twitter.com/vozurepublicana?lang=en" ><img src="../images/web/footer/twitter.png" class="social_urep"></a>
-          <a target="_blank" href="https://www.instagram.com/urepublicana/" ><img src="../images/web/footer/instagram.png" class="social_urep"></a>
-          <a target="_blank" href="https://www.youtube.com/user/UREPUBLICANARADIO" ><img src="../images/web/footer/youtube.png" class="social_urep"></a>
-          <a target="_blank" href="https://www.linkedin.com/start/join?session_redirect=httpswww.linkedin.comcompanycorporacion-universitaria-republicana&source=bf&trk=login_reg_redirect" ><img src="../images/web/footer/linkedin.png" class="social_urep"></a>
+          <a target="_blank" href="https://www.facebook.com/CorporacionUniversitariaRepublicana/" ><img src="<?= URL_MASTER ?>/images/web/footer/facebook.png" class="social_urep"></a>
+          <a target="_blank" href="https://twitter.com/vozurepublicana?lang=en" ><img src="<?= URL_MASTER ?>/images/web/footer/twitter.png" class="social_urep"></a>
+          <a target="_blank" href="https://www.instagram.com/urepublicana/" ><img src="<?= URL_MASTER ?>/images/web/footer/instagram.png" class="social_urep"></a>
+          <a target="_blank" href="https://www.youtube.com/user/UREPUBLICANARADIO" ><img src="<?= URL_MASTER ?>/images/web/footer/youtube.png" class="social_urep"></a>
+          <a target="_blank" href="https://www.linkedin.com/start/join?session_redirect=httpswww.linkedin.comcompanycorporacion-universitaria-republicana&source=bf&trk=login_reg_redirect" ><img src="<?= URL_MASTER ?>/images/web/footer/linkedin.png" class="social_urep"></a>
         </div>
 
         <div class="left-align row enlaces_urep">
@@ -39,7 +39,7 @@
             <ul>
               <li><a target="_blank" href="http://consultoriojuridico.urepublicana.edu.co/">Consultorio Jurídico</a></li>
               <li><a target="_blank" href="http://urepublicana.edu.co/recursos-electronicos/">Recursos Electrónicos</a></li>
-              <li><a href="../images/documentos/footer/Listado_de_Extensiones.pdf">Directorio de Extensiones</a></li>
+              <li><a href="<?= URL_MASTER ?>/images/documentos/footer/Listado_de_Extensiones.pdf">Directorio de Extensiones</a></li>
             </ul>
           </div>
 
@@ -62,14 +62,15 @@
   </div>
 
 <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<script src="../assets/js/materialize.min.js"></script>
-<!-- <script src="../assets/js/init.min.js"></script> -->
+<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+<script src="<?= URL_MASTER ?>/assets/js/materialize.min.js"></script>
+<script src="<?= URL_MASTER ?>/assets/js/init.min.js"></script>
 
 <script type="text/javascript">
 function downloadJSAtOnload() {
 var element = document.createElement("script");
-element.src = "../assets/js/init.min.js";
+element.src = "https://www.google.com/recaptcha/api.js";
 document.body.appendChild(element);
 }
 if (window.addEventListener)

@@ -26,7 +26,7 @@
 
           <div class="card horizontal">
             <div class="card-image">
-              <img src="../images/web/libros_gaceta/gaceta_all.png" class="img_card">
+              <img src="<?= URL_MASTER ?>/images/web/libros_gaceta/gaceta_all.png" class="img_card">
             </div>
             <div class="card-stacked">
               <div class="card-content">
@@ -39,7 +39,7 @@
                 </p>
               </div>
               <div class="card-action">
-                <a target="_blank" href="../images/gaceta/<?= $gaceta->archivo ?>" download="gaceta_<?= $gaceta->version ?>.pdf" class="enlace">Descargar</a>
+                <a target="_blank" href="<?= URL_MASTER ?>/images/gaceta/<?= $gaceta->archivo ?>" download="gaceta_<?= $gaceta->version ?>.pdf" class="enlace">Descargar</a>
               </div>
             </div>
           </div>

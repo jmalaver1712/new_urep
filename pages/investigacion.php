@@ -7,14 +7,14 @@
 </head>
 <body id="body_urep">
 	<?php require_once('../plantilla/menu.php'); ?>
-	<div class="breadcrumb"> <a href="index.php"> Inicio </a> > <a href="investigacion.php"> Centro de Investigación </a></div>
+	<div class="breadcrumb"> <a href="<?= URL_MASTER ?>/pages/index.php"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/investigacion.php"> Centro de Investigación </a></div>
 
 
 	<!-- ENLACES RAPIDOS - ATAJOS -->
 	<div class="container">
 		<div class="row center">
 			<h4>Centro de Investigación</h4>
-			<img src="../images/web/investigacion/banner_investigacion.jpg" width="100%">
+			<img src="<?= URL_MASTER ?>/images/web/investigacion/banner_investigacion.jpg" width="100%">
 		</div>
 
 		<div class="row lnk_first">
@@ -22,35 +22,35 @@
 
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#inves_estruc">
-					<img class="atajo" name="../images/web/investigacion/inves_estruc_1.png" src="../images/web/investigacion/inves_estruc.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/investigacion/inves_estruc_1.png" src="<?= URL_MASTER ?>/images/web/investigacion/inves_estruc.png">
 					<p>Estructura de Investigación</p>
 				</span>
 			</div>
 
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#inves_grupos">
-					<img class="atajo" name="../images/web/investigacion/inves_grupos_1.png" src="../images/web/investigacion/inves_grupos.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/investigacion/inves_grupos_1.png" src="<?= URL_MASTER ?>/images/web/investigacion/inves_grupos.png">
 					<p>Grupos de Investigación</p>
 				</span>
 			</div>
 
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#inves_docs">
-					<img class="atajo" name="../images/web/investigacion/inves_docs_1.png" src="../images/web/investigacion/inves_docs.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/investigacion/inves_docs_1.png" src="<?= URL_MASTER ?>/images/web/investigacion/inves_docs.png">
 					<p>Documentos de Interes</p>
 				</span>
 			</div>
 
 			<div class="col s4 m2">
 				<a target="_blank" href="http://ojs.urepublicana.edu.co/index.php/">
-					<img class="atajo" name="../images/web/atajos/revista_1.png" src="../images/web/atajos/revista.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/atajos/revista_1.png" src="<?= URL_MASTER ?>/images/web/atajos/revista.png">
 					<p>Revistas Republicana</p>
 				</a>
 			</div>
 
 			<div class="col s4 m2">
 				<a href="libros.php">
-					<img class="atajo" name="../images/web/atajos/libro_1.png" src="../images/web/atajos/libro.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/atajos/libro_1.png" src="<?= URL_MASTER ?>/images/web/atajos/libro.png">
 					<p>Libros Electrónicos</p>
 				</a>
 			</div>
@@ -61,7 +61,7 @@
 
 			<!-- Estructura de Investigación -->
 			<div id="inves_estruc" class="col s12 content_urep ocultar">
-				<img class="center" src="../images/web/investigacion/inves_estructura.jpg" width="100%">
+				<img class="center" src="<?= URL_MASTER ?>/images/web/investigacion/inves_estructura.jpg" width="100%">
 			</div>
 
 			<!-- GRUPOS -->
@@ -72,7 +72,7 @@
 						Un Grupo de Investigación es un conjunto de personas,que se reúnen para realizar investigación en una temática dada, formulan uno o varios problemas de su interés, trazan un plan estratégico de largo o mediano plazo para trabajar en él y producir unos resultados de conocimiento sobre el tema cuestión.
 					</p>
 					<div class="row center">
-						<img src="../images/web/investigacion/inves_grupos.jpg" width="100%">
+						<img src="<?= URL_MASTER ?>/images/web/investigacion/inves_grupos.jpg" width="100%">
 					</div>
 					<div class="row">
 

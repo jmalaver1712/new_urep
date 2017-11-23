@@ -31,7 +31,7 @@
 
           <div class="card horizontal">
             <div class="card-image">
-              <img src="../images/libros/<?= $libro->imagen ?>" class="img_card">
+              <img src="<?= URL_MASTER ?>/images/libros/<?= $libro->imagen ?>" class="img_card">
             </div>
             <div class="card-stacked">
               <div class="card-content">
@@ -41,7 +41,7 @@
                 </p>
               </div>
               <div class="card-action">
-                 <a class="post_variable enlace" title="../libros/" name="<?= $libro->id ?>" href="#!">Mas información</a>
+                <a class="enlace" href="<?= URL_MASTER ?>/pages/detalle_libro.php?id=<?= $libro->id ?>" >Mas información</a>
               </div>
             </div>
           </div>

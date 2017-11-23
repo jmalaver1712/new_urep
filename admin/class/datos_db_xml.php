@@ -39,6 +39,7 @@ class datos_bd extends Conexion{
 			a.id_mercadeo,
 			a.video_promo,
 			a.resolucion,
+			a.name,
 			f.id_pensum,
 			f.periodos 			semestres,
 			a.visible, 

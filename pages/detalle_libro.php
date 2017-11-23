@@ -1,5 +1,5 @@
 <?php
-  if (!isset($_POST['id'])){
+  if (!isset($_GET['id'])){
     print('<meta http-equiv="refresh" content="0.1; url=../pages/libros.php" />');
     exit();
   }
@@ -8,7 +8,7 @@
 <html manifest="urepublicana.appcache">
 <head>
   <?php require_once('../plantilla/head.php'); 
-  $libro = $get_xml->reg_detail_xml("id" ,$_POST['id'] ,"libros.xml", 1);
+  $libro = $get_xml->reg_detail_xml("id" ,$_GET['id'] ,"libros.xml", 1);
   ?>
 </head>
 <body id="body_urep">

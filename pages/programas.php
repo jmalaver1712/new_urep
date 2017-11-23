@@ -7,17 +7,17 @@
 <body id="body_urep">
   <?php require_once('../plantilla/menu.php');
 
-  if (isset($_POST['id'])){
+  if (isset($_GET['id'])){
 
-    $todos_programas = $get_xml->reg_detail_xml("nivel_academico", $_POST['id'], 'programas.xml', null);
-    if($_POST['id'] == "Profesional"){
+    $todos_programas = $get_xml->reg_detail_xml("nivel_academico", $_GET['id'], 'programas.xml', null);
+    if($_GET['id'] == "Profesional"){
       $title = "Programas de Pregrado";
     }
-    if($_POST['id'] == "Posgrado"){
+    if($_GET['id'] == "Posgrado"){
       $title = "Programas de Posgrado";
     }
     ?>
-    <div class="breadcrumb"><a href="index.php"> Inicio </a> > <a href="programas.php">Programas</a> > <a href="programas.php?id=<?= $_POST['id'] ?>"><?= $_POST['id'] ?></a></div>
+    <div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/index.php"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/programas.php">Programas</a> > <a href="<?= URL_MASTER ?>/pages/programas/<?= $_GET['id'] ?>"><?= $_GET['id'] ?></a></div>
     <!-- CONTENIDO -->
     <div class="container">
       <div class="row">
@@ -31,7 +31,7 @@
           <div class="col s12 m6">
             <div class="card horizontal">
               <div class="card-image">
-                <img src="../images/programas/<?= $programa->snies ?>.jpg" class="img_card">
+                <img src="<?= URL_MASTER ?>/images/programas/<?= $programa->snies ?>.jpg" class="img_card">
               </div>
               <div class="card-stacked">
                 <div class="card-content">
@@ -41,8 +41,7 @@
                   <p class="autor_card"><b>Modalidad: </b><?= $programa->modalidad ?></p>
                 </div>
                 <div class="card-action">
-                  <a class="post_variable enlace" title="../programas/" name="<?= $programa->snies ?>" href="#!">Mas información</a>
-                  <!-- <a href="detalle_programa.php?id=<?= $programa->snies ?>" class="enlace">Mas información</a> -->
+                  <a class="enlace" href="<?= URL_MASTER ?>/pages/programas/<?= $programa->nivel_academico."/".$programa->name ?>">Mas información</a>
                 </div>
               </div>
             </div>
@@ -56,7 +55,7 @@
   }
   else{
     ?>
-    <div class="breadcrumb"><a href="index.php"> Inicio </a> > <a href="programas.php">Programas</a> ></div>
+    <div class="breadcrumb"><a href="index.php"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/programas.php">Programas</a> ></div>
     <!-- CONTENIDO -->
     <div class="container">
       <div class="row">
@@ -67,14 +66,14 @@
         <div class="col s12 m6">
           <div class="card horizontal">
             <div class="card-image">
-              <img src="../images/programas/pregrado.jpg" class="img_card">
+              <img src="<?= URL_MASTER ?>/images/programas/pregrado.jpg" class="img_card">
             </div>
             <div class="card-stacked">
               <div class="card-content">
                 <h5>PROGRAMAS DE PREGRADO</h5><br>
               </div>
               <div class="card-action">
-                <a class="post_variable enlace" title="programas.php" name="Profesional" href="#!">VER TODOS LOS PROGRAMAS</a>
+                <a href="<?= URL_MASTER ?>/pages/programas/Profesional">VER TODOS LOS PROGRAMAS</a>
               </div>
             </div>
           </div>
@@ -83,14 +82,14 @@
         <div class="col s12 m6">
           <div class="card horizontal">
             <div class="card-image">
-              <img src="../images/programas/posgrado.jpg" class="img_card">
+              <img src="<?= URL_MASTER ?>/images/programas/posgrado.jpg" class="img_card">
             </div>
             <div class="card-stacked">
               <div class="card-content">
                 <h5>PROGRAMAS DE POSGRADO</h5><br>
               </div>
               <div class="card-action">
-                <a class="post_variable enlace" title="programas.php" name="Posgrado" href="#!">VER TODOS LOS PROGRAMAS</a>
+                <a href="<?= URL_MASTER ?>/pages/programas/Posgrado">VER TODOS LOS PROGRAMAS</a>
               </div>
             </div>
           </div>

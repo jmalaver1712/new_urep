@@ -5,13 +5,13 @@
 </head>
 <body id="body_urep">
 	<?php require_once('../plantilla/menu.php'); ?>
-	<div class="breadcrumb"><a href="index.php"> Inicio </a> > <a href="centro_idiomas.php"> Centro de Idiomas </a></div>
+	<div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/index.php"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/centro_idiomas.php"> Centro de Idiomas </a></div>
 
 	<div class="container">
 		<div class="row center">
 			<div class="col s12">
 				<h2>Centro de Idiomas</h2>
-				<img src="../images/web/centro_idiomas/banner_centrodeidiomas.jpg" width="100%">
+				<img src="<?= URL_MASTER ?>/images/web/centro_idiomas/banner_centrodeidiomas.jpg" width="100%">
 			</div>
 		</div>
 
@@ -20,28 +20,28 @@
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#idiomas_general">
-					<img class="atajo" name="../images/web/centro_idiomas/idiomas_general_1.png" src="../images/web/centro_idiomas/idiomas_general.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_general_1.png" src="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_general.png">
 					<p>Información General</p>
 				</span>
 			</div>
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#idiomas_acreditacion">
-					<img class="atajo" name="../images/web/centro_idiomas/idiomas_acredita_1.png" src="../images/web/centro_idiomas/idiomas_acredita.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_acredita_1.png" src="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_acredita.png">
 					<p>Acreditación del Segundo Idioma</p>
 				</span>
 			</div>
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#idiomas_curso">
-					<img class="atajo" name="../images/web/centro_idiomas/idiomas_cursos_1.png" src="../images/web/centro_idiomas/idiomas_cursos.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_cursos_1.png" src="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_cursos.png">
 					<p>Cursos de Inglés o Francés</p>
 				</span>
 			</div>
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#idiomas_resumen">
-					<img class="atajo" name="../images/web/centro_idiomas/idiomas_resumen_1.png" src="../images/web/centro_idiomas/idiomas_resumen.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_resumen_1.png" src="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_resumen.png">
 					<p>Opciones de Cumplimiento</p>
 				</span>
 			</div>
@@ -184,9 +184,9 @@
 					<li><b>*</b> Los estudiantes de pregrado que escojan el Curso de Ingles Fuera de Convenio con la Corporación Iberoamericana De Estudios Jurídicos, Económicos Políticos Y Sociales pueden solicitar la Homologación de los tres primeros niveles de inglés aprobados ante la respectiva Facultad anexando el recibo de homologación y un certificado de notas. El estudiante que no opte por el Convenio deberá siempre completar los Niveles 4, 5, 6 de la respectiva segunda lengua, salvo que acredite el cumplimiento del requisito de grado a través de un examen de acreditación internacional o un intercambio académico o cultural</li>
 					</ul>
 					<br><br>
-					Conoce el <i>"Convenio de cooperación interinstitucional entre la corporación universitaria republicana y la corporación iberoamericana de estudios jurídicos, económicos políticos y sociales" </i> <a target="_blank" href="../images/web/centro_idiomas/Convenio-de-Cooperacion.pdf">aqui </a>.
+					Conoce el <i>"Convenio de cooperación interinstitucional entre la corporación universitaria republicana y la corporación iberoamericana de estudios jurídicos, económicos políticos y sociales" </i> <a target="_blank" href="<?= URL_MASTER ?>/images/web/centro_idiomas/Convenio-de-Cooperacion.pdf">aqui </a>.
 					<br><br>
-					Conoce la <i>"Tabla de puntajes del examen de clasificación para estudiantes que escogen la certificación dentro del convenio de cooperación interinstitucional entre la corporación universitaria republicana y la corporación iberoamericana de estudios jurídicos, económicos políticos y sociales" </i> <a target="_blank" href="../images/web/centro_idiomas/Tabla-de-Puntajes-Ingles.pdf">aqui </a>
+					Conoce la <i>"Tabla de puntajes del examen de clasificación para estudiantes que escogen la certificación dentro del convenio de cooperación interinstitucional entre la corporación universitaria republicana y la corporación iberoamericana de estudios jurídicos, económicos políticos y sociales" </i> <a target="_blank" href="<?= URL_MASTER ?>/images/web/centro_idiomas/Tabla-de-Puntajes-Ingles.pdf">aqui </a>
 
 				</p>
 			</div>

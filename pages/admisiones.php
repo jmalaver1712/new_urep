@@ -5,13 +5,13 @@
 </head>
 <body id="body_urep">
 	<?php require_once('../plantilla/menu.php'); ?>
-	<div class="breadcrumb"><a href="index.php"> Inicio </a> > <a href="admisiones.php"> Admisiones </a></div>
+	<div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/index.php"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/admisiones.php"> Admisiones </a></div>
 
 	<div class="container">
 		<div class="row center">
 			<div class="col s12">
 				<h2>Admisiones</h2>
-				<img src="../images/web/admisiones/banner_admision.jpg" width="100%">	
+				<img src="<?= URL_MASTER ?>/images/web/admisiones/banner_admision.jpg" width="100%">	
 				<p class="justificado">
 					Reciba un cordial saludo de la Corporación Universitaria Republicana, nuestra institución cuenta con más de 17 años en el mercado formando colombianos ética, social y científicamente. Agradecemos su interés por hacer parte de nuestra comunidad universitaria, la cual cuenta con más de 5.000 estudiantes formándose en programas de pregrado y posgrado. Nuestras directivas, personal administrativo y docente le extienden un saludo de bienvenida. En este espacio podrá encontrar la información pertinente para realizar su proceso de inscripción y admisión en el programa de su interés para el Primer Semestre de 2018. 
 				</p>
@@ -23,29 +23,29 @@
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#reg_pregrado">
-					<img class="atajo" name="../images/web/admisiones/admin_pregrado_1.png" src="../images/web/admisiones/admin_pregrado.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/admisiones/admin_pregrado_1.png" src="<?= URL_MASTER ?>/images/web/admisiones/admin_pregrado.png">
 					<p>Pregrado</p>
 				</span>
 			</div>
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#reg_posgrado">
-					<img class="atajo" name="../images/web/admisiones/admin_posgrado_1.png" src="../images/web/admisiones/admin_posgrado.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/admisiones/admin_posgrado_1.png" src="<?= URL_MASTER ?>/images/web/admisiones/admin_posgrado.png">
 					<p>Posgrados</p>
 				</span>
 			</div>
 
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#reg_continuada">
-					<img class="atajo" name="../images/web/admisiones/admi_educont_1.png" src="../images/web/admisiones/admi_educont.png">
+					<img class="atajo" name="<?= URL_MASTER ?>/images/web/admisiones/admi_educont_1.png" src="<?= URL_MASTER ?>/images/web/admisiones/admi_educont.png">
 					<p>Educación Continuada</p>
 				</span>
 			</div>
 
 			<div class="col s3 m2">
-				<a href="../pages/financiacion.php">
+				<a href="<?= URL_MASTER ?>/pages/financiacion.php">
 					<span>
-						<img class="atajo" name="../images/web/admisiones/admi_financiacion_1.png" src="../images/web/admisiones/admi_financiacion.png">
+						<img class="atajo" name="<?= URL_MASTER ?>/images/web/admisiones/admi_financiacion_1.png" src="<?= URL_MASTER ?>/images/web/admisiones/admi_financiacion.png">
 						<p>Modalidades de Financiación</p>
 					</span>
 				</a>
@@ -62,6 +62,7 @@
 					<div class="col s12 m3 left-align">
 						<h4>Procesos de Inscripción</h4>
 						<ul>
+							<li name="#pregrado_programas" class="enlace_inter"> Nuestros Programas </li>
 							<li name="#pregrado_nuevos" class="enlace_inter"> Aspirantes nuevos </li>
 							<li name="#pregrado_trans_ext" class="enlace_inter"> Transferencia Externa </li>
 							<li name="#pregrado_trans_int" class="enlace_inter"> Transferencia Interna </li>
@@ -71,6 +72,34 @@
 					</div>
 					<div class="col s12 m9">
 
+						<!-- PROGRAMAS PREGRADO -->
+						<div id="pregrado_programas" class="content_inter ocultar">
+							<?php
+							$programas_pregrado = $get_xml->reg_detail_xml("nivel_academico", "Profesional", 'programas.xml', null);
+							foreach ($programas_pregrado as $programa) {
+							  ?>
+							  <div class="col s12 m7">
+							    <div class="card horizontal">
+							      <div class="card-image">
+							        <img src="<?= URL_MASTER ?>/images/programas/<?= $programa->snies ?>.jpg" class="img_card">
+							      </div>
+							      <div class="card-stacked">
+							        <div class="card-content">
+							          <h6 style="font-size: 1.2em;"><?= $programa->nombre_programa ?></h6><br>
+							          <p class="autor_card"><b>Snies: </b><?= $programa->snies ?></p>
+							          <p class="autor_card"><b>Nivel Académico: </b><?= $programa->nivel_academico ?></p>
+							          <p class="autor_card"><b>Modalidad: </b><?= $programa->modalidad ?></p>
+							        </div>
+							        <div class="card-action">
+							          <a class="enlace" href="<?= URL_MASTER ?>/pages/programas/<?= $programa->nivel_academico."/".$programa->name ?>">Mas información</a>  
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+							  <?php
+							}
+							?>
+						</div>
 
 						<!-- ASPIRANTE NUEVOS -->
 						<div id="pregrado_nuevos" class="content_inter ocultar">
@@ -270,12 +299,42 @@
 					<div class="col s12 m3 left-align">
 						<h4>Procesos de Inscripción</h4>
 						<ul>
+							<li name="#posgrado_programas" class="enlace_inter"> Nuestros Programas </li>
 							<li name="#posgrado_nuevos" class="enlace_inter"> Aspirantes nuevos </li>
 							<li name="#posgrado_opcion_grado" class="enlace_inter"> Especialización como opción de grado </li>
 						</ul>
 					</div>
 
 					<div class="col s12 m9">
+
+						<!-- PROGRAMAS POSGRADO -->
+						<div id="posgrado_programas" class="content_inter ocultar">
+							<?php
+							$programas_pregrado = $get_xml->reg_detail_xml("nivel_academico", "Posgrado", 'programas.xml', null);
+							foreach ($programas_pregrado as $programa) {
+							  ?>
+							  <div class="col s12 m7">
+							    <div class="card horizontal">
+							      <div class="card-image">
+							        <img src="<?= URL_MASTER ?>/images/programas/<?= $programa->snies ?>.jpg" class="img_card">
+							      </div>
+							      <div class="card-stacked">
+							        <div class="card-content">
+							          <h6 style="font-size: 1.2em;"><?= $programa->nombre_programa ?></h6><br>
+							          <p class="autor_card"><b>Snies: </b><?= $programa->snies ?></p>
+							          <p class="autor_card"><b>Nivel Académico: </b><?= $programa->nivel_academico ?></p>
+							          <p class="autor_card"><b>Modalidad: </b><?= $programa->modalidad ?></p>
+							        </div>
+							        <div class="card-action">
+							          <a class="enlace" href="<?= URL_MASTER ?>/pages/programas/<?= $programa->nivel_academico."/".$programa->name ?>">Mas información</a>  
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+							  <?php
+							}
+							?>
+						</div>
 
 						<!-- ASPIRANTE NUEVOS POSGRADO-->
 						<div id="posgrado_nuevos" class="content_inter ocultar">
@@ -337,7 +396,7 @@
 								Presentarse en la oficina de admisiones ubicada en la Carrera 7 No 19 – 38 - segundo piso, con los siguientes documentos de inscripción en físico:
 								<ul>
 									<li><b>* </b>Formulario de Inscripción Posgrado.</li>
-									<li><b>* </b><a target="_blank" href="../images/web/admisiones/formato_solicitud_posgrado.pdf" download="FormatoDeAplicacion.pdf">Formato de aplicación</a> para el programa de especialización, donde el estudiante presenta el programa (terminal o co - terminal) al cual se acoge para iniciar su especialización.</li>
+									<li><b>* </b><a target="_blank" href="<?= URL_MASTER ?>/images/web/admisiones/formato_solicitud_posgrado.pdf" download="FormatoDeAplicacion.pdf">Formato de aplicación</a> para el programa de especialización, donde el estudiante presenta el programa (terminal o co - terminal) al cual se acoge para iniciar su especialización.</li>
 									<li><b>* </b>Certificado de terminación de materias o histórico de notas según sea el caso.</li>
 									<li><b>* </b>Fotocopia de la cédula de ciudadanía </li>
 									<li><b>*</b> Fotocopia Tarjeta Profesional (en el caso de los profesionales que lo requieran) </li>
