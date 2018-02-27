@@ -1,17 +1,13 @@
 <!doctype html>
 <html>
 <head>
-  <?php require_once('../plantilla/head.php'); 
-  $todos_regs = $get_xml->reg_detail_xml("tipo", $_GET['tipo'], 'noticias_eventos.xml', null);
-  if($_GET['tipo'] == "evento"){
-    $title = "Conoce todos los Eventos";
-  }
-  if($_GET['tipo'] == "noticia"){
-    $title = "Conoce todas las Noticias";
-  }
-  if($_GET['tipo'] == "banner"){
-    $title = "Conoce todos los Banner";
-  }
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  
+  <?php require_once('../plantilla/head.php');
+  $todos_regs = $get_xml->registros_all_xml($_GET['id'].'.xml');
   ?>
 </head>
 <body>
@@ -19,7 +15,7 @@
 <!-- CONTENIDO -->
 <div class="container">
   <center>
-    <h3> <?= $title ?> </h3>
+    <h3>Conoce todas las publicaciones</h3>
   </center>
     <?php
       foreach ($todos_regs as $reg) {
@@ -32,7 +28,7 @@
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <p class="titulo_card"><?= $reg->titular; ?></p>
+              <p class="titulo_card mayus"><?= $reg->titular; ?><br><b>[<?= $reg->tipo; ?>]</b><br></p>
               <p class="autor_card">
                 <?= $reg->resumen; ?>
               </p>
@@ -43,7 +39,7 @@
 
             </div>
             <div class="card-action">
-              <a class="post_variable" title="../noticias_y_eventos/" name="<?= $reg->id ?>" href="#!">Ver</a>
+              <a href="<?= URL_MASTER ?>/pages/publicaciones/<?= $reg->tipo ?>/<?= $_GET['id'] ?>/<?= $reg->name ?>">Ver</a>
               <a href="form_noticias_eventos.php?id=<?= $reg->id; ?>">Editar</a>
               <a class="confirmar_url" href="control/control_noticias_eventos.php?accion=delete&id=<?= $reg->id; ?>">Eliminar</a>
             </div>

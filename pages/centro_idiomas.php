@@ -6,7 +6,6 @@
 <body id="body_urep">
 	<?php require_once('../plantilla/menu.php'); ?>
 	<div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/index.php"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/centro_idiomas.php"> Centro de Idiomas </a></div>
-
 	<div class="container">
 		<div class="row center">
 			<div class="col s12">
@@ -14,55 +13,41 @@
 				<img src="<?= URL_MASTER ?>/images/web/centro_idiomas/banner_centrodeidiomas.jpg" width="100%">
 			</div>
 		</div>
-
 		<div class="row lnk_first">
 			<div class="col s12 m2"><br></div>
-
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#idiomas_general">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_general_1.png" src="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_general.png">
 					<p>Información General</p>
 				</span>
 			</div>
-
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#idiomas_acreditacion">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_acredita_1.png" src="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_acredita.png">
 					<p>Acreditación del Segundo Idioma</p>
 				</span>
 			</div>
-
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#idiomas_curso">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_cursos_1.png" src="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_cursos.png">
 					<p>Cursos de Inglés o Francés</p>
 				</span>
 			</div>
-
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#idiomas_resumen">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_resumen_1.png" src="<?= URL_MASTER ?>/images/web/centro_idiomas/idiomas_resumen.png">
 					<p>Opciones de Cumplimiento</p>
 				</span>
 			</div>
-
 		</div>
-
-
 		<div class="row">
-
 			<!-- GENERAL -->
 			<div id="idiomas_general" class="col s12 content_urep ocultar">
 				<p>
-
 					<h4>Información General</h4>
-
 					<h5>Departamento de Idiomas</h5>
-
 					El Departamento de Idiomas de la Corporación Universitaria Republicana busca la coordinación de la participación de los miembros de nuestra comunidad académica en los diferentes procesos de aprendizaje de leguas extrajeras y convocatorias internacionales, así como la coordinación de la internacionalización de nuestros programas académicos a través del estudio y evaluación de lenguas extranjeras.
-
 					La Corporación Universitaria Republicana se ha unido al proceso de internalización mediante varias estrategias dirigidas a los docentes, investigadores, y estudiantes de nuestra institución. El Departamento de Idiomas busca coordinar el factor humano docente que se encarga de capacitar y evaluar las aptitudes de docentes, investigadores, y estudiantes frente al aprendizaje de lenguas extranjeras.
-
 					El Departamento de Idiomas ofrece los siguientes servicios a la comunidad académica Republicana:
 					<ul>
 						<li><b> * </b>Cursos de Inglés</li>
@@ -70,9 +55,7 @@
 						<li><b> * </b>Soporte académico a través de actualización bibliográfica y substantiva de los curriculos de los programas académicos</li>
 						<li><b> * </b>Traducción de material de refencia físico y virtual</li>
 					</ul>
-
 					<h5>Curso de Inglés</h5>
-
 					El Curso de Inglés ofrecido por el Departamento de Idiomas de la Corporación Universitaria Republicana tiene las siguientes caracteristica:
 					<ul>
 						<li><b> * </b>Niveles:  Básico – Intermedio – Avanzado</li>
@@ -82,8 +65,6 @@
 					</ul>
 				</p>
 			</div>
-
-
 			<!-- ACREDITACION -->
 			<div id="idiomas_acreditacion" class="col s12 content_urep ocultar">
 				<div class="row">
@@ -96,7 +77,6 @@
 						</ul>
 					</div>
 					<div class="col s12 m9">
-
 						<!-- LINEAMIENTOS -->
 						<div id="acredita_lineamientos" class="content_inter ocultar">
 							<p>
@@ -122,7 +102,6 @@
 								Cada estudiante debe cubrir el valor de los cursos de capacitación y exámenes que escoja para satisfacer el requisito de segundo idioma como requisito de grado.
 							</p>
 						</div>
-
 						<!-- OPCIONES -->
 						<div id="acredita_opciones" class="content_inter ocultar">
 							<p>
@@ -135,7 +114,6 @@
 								</ul>
 							</p>
 						</div>
-
 						<!-- PROCEDIMIENTO -->
 						<div id="acredita_procedimiento" class="content_inter ocultar">
 							<p>
@@ -151,7 +129,6 @@
 								</ul>
 							</p>
 						</div>
-
 						<!-- CURSO INGLES FRANCES -->
 						<div id="acredita_cursos" class="content_inter ocultar">
 							<p>
@@ -167,10 +144,8 @@
 							</p>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
 			<!-- CURSOS INGLES - FRANCES -->
 			<div id="idiomas_curso" class="col s12 content_urep ocultar">
 				<p>
@@ -187,24 +162,20 @@
 					Conoce el <i>"Convenio de cooperación interinstitucional entre la corporación universitaria republicana y la corporación iberoamericana de estudios jurídicos, económicos políticos y sociales" </i> <a target="_blank" href="<?= URL_MASTER ?>/images/web/centro_idiomas/Convenio-de-Cooperacion.pdf">aqui </a>.
 					<br><br>
 					Conoce la <i>"Tabla de puntajes del examen de clasificación para estudiantes que escogen la certificación dentro del convenio de cooperación interinstitucional entre la corporación universitaria republicana y la corporación iberoamericana de estudios jurídicos, económicos políticos y sociales" </i> <a target="_blank" href="<?= URL_MASTER ?>/images/web/centro_idiomas/Tabla-de-Puntajes-Ingles.pdf">aqui </a>
-
 				</p>
 			</div>
-
 			<div id="idiomas_resumen" class="col s12 content_urep content_inter ocultar">
 				<p>	
 					<h5 class="center">
 						Requisito de Grado de Segunda Lengua para los Programas de Pregrado de la Corporación Universitaria Republicana
 						<br><i style="font-size: 0.7em;">Requisito: Nivel B1 del Marco de Referencia Común Europeo</i>
 					</h5>
-
 					<h5 class="admision_proceso"><span>1</span> Opciones de Cumplimiento </h5>
 					<ul>
 						<li><b>*</b> Examen de Acreditación Internacional</li>
 						<li><b>*</b> Intercambio Internacional</li>
 						<li><b>*</b> Certificación de el Departamento de Idiomas de la Corporación Universitaria Republicana</li>
 					</ul>
-
 					<h5 class="admision_proceso"><span>2</span> Examen de Acreditación Internacional</h5>
 					Los exámenes de acreditación internacional y los puntajes mínimos que reconoce la Corporación Universitaria Republicana para acreditar los niveles B1 en inglés del Marco Común Europeo (MCE) son:
 					<ul>
@@ -213,11 +184,8 @@
 						<li><b>*</b> IELTS con un puntaje general de 4 a 5 </li>
 						<li><b>*</b> MICHIGAN un puntaje general de 40 a 52 </li>
 					</ul>
-
 					<h5 class="admision_proceso"><span>3</span> Intercambio Internacional</h5>
 					Los Corporación Universitaria Republicana permite acreditar los niveles B1 en inglés del Marco Común Europeo (MCE) a través de la realización de uno (1) o más intercambio(s) académico(s) y/o cultural(es) durante el transcurso de los estudios de pregrado a partir del tercer (3) Semestre
-
-
 					<h5 class="admision_proceso"><span>4</span>Certificación de el Departamento de Idiomas</h5>
 					Los Corporación Universitaria Republicana permite acreditar los niveles B1 en Inglés del Marco Común Europeo (MCE) a través de:
 					<ul>
@@ -226,12 +194,8 @@
 					</ul>
 				</p>
 			</div>
-		
 		</div>
 	</div>
-
-
-
 	<?php require_once('../plantilla/footer.php'); ?>
 </body>
 </html>

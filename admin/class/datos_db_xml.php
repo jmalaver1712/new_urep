@@ -21,6 +21,24 @@ class datos_bd extends Conexion{
 	}
 
 
+	public function noticias_eventos($id_item, $orden){
+		$data = array();
+		$result = $this->_db->query("
+			SELECT a.* FROM noticias_eventos a, item_noticias_eventos b 
+			WHERE b.id_item = '$id_item' AND b.id_noticias_eventos = a.id AND a.visible = 1 ORDER BY orden DESC, $orden DESC
+			");
+		if (!$result) {
+			printf("Errormessage Todos los ".$id_item.": %s\n\n", $this->_db->error);
+		}else{
+			$regs = $result->fetch_all(MYSQLI_ASSOC);
+			foreach ($regs as $row) {
+				$data[] = $row;
+			}
+		}
+		return $data;
+	}
+
+
 	public function all_programas(){
 		$data = array();
 		
@@ -40,11 +58,12 @@ class datos_bd extends Conexion{
 			a.video_promo,
 			a.resolucion,
 			a.name,
+			a.convenio_sena,
 			f.id_pensum,
 			f.periodos 			semestres,
 			a.visible, 
 			a.orden
-			FROM urep_programa                a,
+			FROM urep_programa           a,
 			urep_facultad                b,
 			urep_nivel_programa          c,
 			urep_modalidad_programa      d,
@@ -55,10 +74,10 @@ class datos_bd extends Conexion{
 			AND a.id_modalidad = d.id_modalidad_programa
 			AND a.id_metodologia = e.id_metodologia_programa
 			AND a.id_programa = f.id_programa
-			AND f.id_pensum IN (13,14,15,16,17,18,32,33,34,35,36,37,38,39,40)
+			AND f.id_pensum IN (9,13,14,15,16,17,18,32,33,34,35,36,37,38,39,40,41,42)
 			AND a.id_estado = 1
-		");
-
+			");
+		// 9
 		if (!$result) {
 			printf("Errormessage Todos los Programas: %s\n", $this->_db->error);
 		}else{
@@ -98,14 +117,14 @@ class datos_bd extends Conexion{
 			FROM urep_materia        a
 			INNER JOIN urep_materia_pensum b
 			ON a.id_materia = b.id_materia
-			WHERE b.id_pensum IN (13,14,15,16,17,18,32,33,34,35,36,37,38,39,40) ) AS Z) AS Y
+			WHERE b.id_pensum IN (9,13,14,15,16,17,18,32,33,34,35,36,37,38,39,40,41,42) ) AS Z) AS Y
 			GROUP BY Y.id_pensum,
 			SUBSTRING(Y.descripcion, 1, Y.pos),
 			Y.nivel,
 			Y.creditos,
 			Y.intensidad_horaria
-		");
-
+			");
+		// 9
 		if (!$result) {
 			printf("Errormessage Todos los Cursos: %s\n", $this->_db->error);
 		}else{

@@ -2,7 +2,7 @@
 
 require_once('../class/class_gaceta.php');
 require_once('../class/helper.php');
-
+noCache();
 
 if (isset($_POST['accion'])) {
 

@@ -1,95 +1,52 @@
 <!doctype html>
 <html>
 <head>
-  <?php require_once('../plantilla/head.php');
-  ?>
+  <?php require_once('../plantilla/head.php'); ?>
 </head>
 <body>
-  <?php require_once('plantilla_admin/menu_admin.php'); ?>
   <!-- CONTENIDO -->
   <div class="container">
+    <div class="row">
 
-    <div class="col s12 m6">
-      <div class="card horizontal">
-        <div class="card-image">
-          <h3>Eventos</h3>
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>Conoce y administra los Eventos</p>
-          </div>
-          <div class="card-action">
-            <a href="list_noticias_eventos.php?tipo=evento">Ver Eventos</a>
+      <div class="col s12 m6 offset-m3">
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              
+              <div class="row center">
+                <h2>Iniciar Sesión</h2>
+              </div>
+              <form class="col s12" action="control/acceso.php" method="POST">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input type="text" id="user" name="user" class="validate">
+                    <label for="user">Usuario</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="password" type="password" name="password" class="validate">
+                    <label for="password">Contraseña</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s12 center">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Ingresar
+                    <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+            
+            </div>
           </div>
         </div>
       </div>
+
     </div>
-
-    <div class="col s12 m6">
-      <div class="card horizontal">
-        <div class="card-image">
-          <h3>Noticias</h3>
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>Conoce y administra las Noticias</p>
-          </div>
-          <div class="card-action">
-            <a href="list_noticias_eventos.php?tipo=noticia">Ver Noticias</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m6">
-      <div class="card horizontal">
-        <div class="card-image">
-          <h3>Banners</h3>
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>Conoce y administra las Banners</p>
-          </div>
-          <div class="card-action">
-            <a href="list_noticias_eventos.php?tipo=banner">Ver Banners</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col s12 m6">
-      <div class="card horizontal">
-        <div class="card-image">
-          <h3>Libros</h3>
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>Conoce y administra los libros</p>
-          </div>
-          <div class="card-action">
-            <a href="list_libros.php">Ver libros</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m6">
-      <div class="card horizontal">
-        <div class="card-image">
-          <h3>Gaceta</h3>
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>Conoce y administra las Versiones de la Gaceta Republicana</p>
-          </div>
-          <div class="card-action">
-            <a href="list_gacetas.php">Ver Versiones</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
   
   <?php require_once('../plantilla/footer.php'); ?>

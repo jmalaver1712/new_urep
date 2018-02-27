@@ -6,9 +6,7 @@
 </head>
 <body id="body_urep">
   <?php require_once('../plantilla/menu.php');
-
   if (isset($_GET['id'])){
-
     $todos_programas = $get_xml->reg_detail_xml("nivel_academico", $_GET['id'], 'programas.xml', null);
     if($_GET['id'] == "Profesional"){
       $title = "Programas de Pregrado";
@@ -41,7 +39,7 @@
                   <p class="autor_card"><b>Modalidad: </b><?= $programa->modalidad ?></p>
                 </div>
                 <div class="card-action">
-                  <a class="enlace" href="<?= URL_MASTER ?>/pages/programas/<?= $programa->nivel_academico."/".$programa->name ?>">Mas información</a>
+                  <a class="enlace" href="<?= URL_MASTER ?>/pages/programas/<?= $programa->nivel_academico."/".$programa->name ?>">Más información</a>
                 </div>
               </div>
             </div>
@@ -62,7 +60,6 @@
         <center>
           <h3> Conoce todos las Programas</h3>
         </center>
-
         <div class="col s12 m6">
           <div class="card horizontal">
             <div class="card-image">
@@ -78,7 +75,6 @@
             </div>
           </div>
         </div>
-
         <div class="col s12 m6">
           <div class="card horizontal">
             <div class="card-image">
@@ -94,20 +90,11 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
-
-
     <?php
   }
   ?>
-  
-
-
-
-  
   <?php require_once('../plantilla/footer.php'); ?>
-
 </body>
 </html>

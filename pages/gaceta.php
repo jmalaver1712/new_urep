@@ -8,22 +8,17 @@
 <body id="body_urep">
   <?php require_once('../plantilla/menu.php'); ?>
   <div class="breadcrumb"><a href="index.php"> Inicio </a> > <a href="gaceta.php"> Gaceta Republicana </a></div>
-
   <div class="container">
     <div class="section">
       <div class="row">
        <h3 class="center">Gaceta Republicana</h3>
     </div>
-
     <!--   Icon Section   -->
     <div class="row" data-filter="true">
       <?php
-
       foreach ($todos_gaceta as $gaceta) {
         ?>
-
         <div class="col s12 m6">
-
           <div class="card horizontal">
             <div class="card-image">
               <img src="<?= URL_MASTER ?>/images/web/libros_gaceta/gaceta_all.png" class="img_card">
@@ -31,8 +26,8 @@
             <div class="card-stacked">
               <div class="card-content">
                 <p class="titulo_card">Gaceta Republicana N <?= $gaceta->version ?></p>
-                <p class="autor_card"><b>Fecha</b>
-                  <?= $gaceta->fecha ?>
+                <p class="autor_card"><b>Fecha: </b>
+                  <?= $gaceta->mes." - ".$gaceta->ano ?>
                 </p>
                 <p class="autor_card">
                   <?= $gaceta->descripcion ?>
@@ -43,20 +38,16 @@
               </div>
             </div>
           </div>
-
         </div>
         <?php
       }
       ?>
     </div>
-
   </div>
   <br><br>
 </div>
-
 <?php require_once('../plantilla/footer.php'); ?>
 <script type="text/javascript">
-
   $(document).ready(function () {
     $('#libros_search').keyup(function () {
       var rex = new RegExp($(this).val(), 'i');
@@ -66,7 +57,6 @@
       }).show();
     })
   });
-
 </script>
 </body>
 </html>

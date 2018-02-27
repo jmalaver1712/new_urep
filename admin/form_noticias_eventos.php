@@ -2,10 +2,16 @@
 <html>
 <head>
 	<?php include('../plantilla/head.php');
+
+	$id1 = 0;
 	if ( isset($_GET['id']) ) {
 		$noticia_evento = $get_xml->reg_detail_xml("id" ,$_GET['id'] ,"noticias_eventos.xml", 1);
-		$noticia_evento_galeria = $get_xml->reg_detail_xml("id_noticia_evento" ,$_GET['id'] ,"noticias_eventos_galeria.xml", null);
+		$id1 = intval($noticia_evento[0]->id);
+		$noticia_evento_galeria = $get_xml->reg_detail_xml("id_noticia_evento",$id1,"noticias_eventos_galeria.xml", null);
+		$item_noticias_eventos = $get_xml->reg_detail_xml("id_noticias_eventos", $id1, "item_noticias_eventos.xml", null);
 	}
+
+	$items = $get_xml->registros_all_xml("item.xml");
 	?>
 </head>
 <body>
@@ -22,7 +28,7 @@
 
 				<div class="row">
 					<div class="input-field col s12">
-						<input placeholder="Nombre del Evento o Noticia" name="titular" id="titular" type="text" autocomplete="off" class="validate" required="" value="<?php if (isset($noticia_evento)){ echo $noticia_evento[0]->titular; } ?>">
+						<input placeholder="Nombre del Evento o Noticia" name="titular" id="titular" type="text" autocomplete="off" class="validate mayus" required="" value="<?php if (isset($noticia_evento)){ echo $noticia_evento[0]->titular; } ?>">
 						<label for="titular">Titular / Nombre</label>
 					</div>
 				</div>
@@ -44,6 +50,11 @@
 							<input name="tipo" type="radio" id="tipo_banner" value="banner" 
 							<?php if ( isset($noticia_evento) && $noticia_evento[0]->tipo == "banner" ){ echo "checked"; } ?> />
 							<label for="tipo_banner">Banner Slider</label>
+						</p>
+						<p>
+							<input name="tipo" type="radio" id="tipo_popup" value="popup" 
+							<?php if ( isset($noticia_evento) && $noticia_evento[0]->tipo == "popup" ){ echo "checked"; } ?> />
+							<label for="tipo_popup">Pop Up</label>
 						</p>
 					</div>
 					<div class="input-field col s6">
@@ -78,9 +89,36 @@
 					</div>
 
 					
-					<div class="input-field col s12">
+					<div class="input-field col s6">
 						<p>Imagen Principal (1350 * 600)</p>
 						<input id="imagen" name="imagen" type="file" placeholder="Cargar una sola imagen (.PNG .JPG)" accept="image/*">
+					</div>
+
+					<!-- ITEMS -->
+					<div class="input-field col s6">
+						<h5>Publicar en</h5>
+						<div class="input-field">
+							<?php
+							foreach ($items as $item) {
+								$check = "";
+								if ($id1 != 0) {
+									foreach ($item_noticias_eventos as $value) {
+										$a1 = intval($value->id_item);
+										$a2 = intval($item->id);
+										if ($a1 == $a2) {
+											$check = "checked";
+										}
+									}
+								}
+								?>
+								<div>
+									<input type="checkbox" name="item[<?= $item->id ?>]" id="<?= $item->id ?>" value="<?= $item->id ?>" <?= $check ?>/>
+									<label for="<?= $item->id ?>"><?= $item->nombre ?></label>
+								</div>
+								<?php 
+							}
+							?>
+						</div>
 					</div>
 					
 				</div>
@@ -88,22 +126,17 @@
 				<div class="row">
 					<div class="input-field col s12">
 						<p>Texto de la Noticia / Evento</p>
-						<textarea name="noticia" id="noticia" style="width: 100%; height: 200px;"><?php if (isset($noticia_evento)){ echo $noticia_evento[0]->noticia; } ?></textarea>
+						<textarea name="noticia" id="noticia" style="width: 100%; height: 200px;"><?php if (isset($noticia_evento)){ echo $noticia_evento[0]->noticia; } ?></textarea>						
 					</div>
 				</div>
 
-
 				<div class="row">
-
 					<h5>Galeria de Imagenes</h5>
-
 					<div class="field_wrapper">
-
 						<div>
 							<input name="galeria[]" type="file" placeholder="Cargar una sola imagen (.PNG .JPG)" accept="image/*">
 							<a href="javascript:void(0);" class="add_button" title="Add field"><img src="../images/web/menu/add_icon.png" width="30" /></a><br><br>
 						</div>
-
 					</div>
 				</div>
 
@@ -117,6 +150,19 @@
 				</div>
 
 			</form>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<h5>Documentos Adicionales</h5>
+					<form enctype="multipart/form-data" id="formuploadajax" method="post">
+						<input  type="hidden" id="ruta" name="ruta" value="../../images/noticias_eventos/galeria/">
+						<input  type="file" id="archivo_add" name="archivo_add"/>
+						<input type="submit" value="Subir archivos"/>
+					</form>
+					<div id="mensaje"></div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -144,7 +190,28 @@
         $(this).parent('div').remove(); //Remove field html
         x--; //Decrement field counter
     });
-    
 });
+
+
+	$(function(){
+		$("#formuploadajax").on("submit", function(e){
+			e.preventDefault();
+			var f = $(this);
+			var formData = new FormData(document.getElementById("formuploadajax"));
+			formData.append("dato", "valor");
+			$.ajax({
+				url: "../admin/control/control_docs_add.php",
+				type: "post",
+				dataType: "html",
+				data: formData,
+				cache: false,
+				contentType: false,
+				processData: false
+			})
+			.done(function(res){
+				$("#mensaje").html("<br>Enlace: <b>" + res +"</b>");
+			});
+		});
+	});
 </script>
 </html>

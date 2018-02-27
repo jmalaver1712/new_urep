@@ -6,7 +6,6 @@
 <body id="body_urep">
 	<?php require_once('../plantilla/menu.php'); ?>
 	<div class="breadcrumb"><a href="<?= URL_MASTER ?>/pages/index.php"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/biblioteca.php"> Biblioteca </a></div>
-
 	<div class="container">
 		<div class="row center">
 			<div class="col s12">
@@ -14,18 +13,14 @@
 				<img src="<?= URL_MASTER ?>/images/web/biblioteca/banner_biblioteca.jpg" width="100%">
 			</div>
 		</div>
-
-
 		<div class="row lnk_first">
 			<div class="col s2 m1"><br></div>
-
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#biblio_general">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/biblioteca/bibilo_general_1.png" src="<?= URL_MASTER ?>/images/web/biblioteca/bibilo_general.png">
 					<p>Información General</p>
 				</span>
 			</div>
-
 			<div class="col s4 m2">
 				<a target="_blank" href="http://republicana.redbiblio.net/">
 					<span>
@@ -34,52 +29,41 @@
 					</span>
 				</a>
 			</div>
-
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#biblio_servicios">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/biblioteca/biblio_servicios_1.png" src="<?= URL_MASTER ?>/images/web/biblioteca/biblio_servicios.png">
 					<p>Servicios</p>
 				</span>
 			</div>
-
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#biblio_recursos">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/biblioteca/biblio_recursos_1.png" src="<?= URL_MASTER ?>/images/web/biblioteca/biblio_recursos.png">
 					<p>Recursos Electronicos</p>
 				</span>
 			</div>
-
 			<div class="col s4 m2">
 				<span class="enlace_urep" name="#biblio_nuevas">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/biblioteca/biblio_adquiciciones_1.png" src="<?= URL_MASTER ?>/images/web/biblioteca/biblio_adquiciciones.png">
 					<p>Nuevas Adquisiciones</p>
 				</span>
 			</div>
-
 		</div>
-
-
 		<div class="row">
-
 			<!-- GENERAL -->
 			<div id="biblio_general" class="col s12 content_urep ocultar">
 				<p>	
 					<h5>Misión</h5>
 					La Biblioteca de la Corporación Universitaria Republicana tiene como misión ofrecer a la comunidad Republicana recursos bibliográficos pertinentes  y servicios de alta calidad para apoyar  los programas de docencia, investigación y extensión que desarrolla la Institución.
-
 					<h5>Vision</h5>
 					Constituirnos en un referente en el entorno como biblioteca universitaria, en cuanto a sus buenas prácticas y gestión de la calidad de los servicios y productos ofrecidos.
-
 					<h5>Objetivos</h5>
 					<ul>
 						<li><b> * </b> Brindar a los miembros de la comunidad universitaria el acceso y difusión de la información apropiada y actualizada acorde a los programas académicos de la Corporación.</li>
 						<li><b> * </b> Suministrar servicios de información que respondan a las necesidades de la comunidad universitaria.</li>
 						<li><b> * </b> Cooperar en el desarrollo de planes de extensión universitaria. Establecer los nexos correspondientes para la vinculación a redes bibliotecarias locales, nacionales e internacionales.</li>
 					</ul>
-
 					<h5>Ubicación</h5>
 					Calle 20 No. 5 – 67 Primer piso.
-
 					<h5>Horario</h5>
 					<ul>
 						<li>Lunes a viernes de 7:00 a.m.  a  10:00 p.m.</li>
@@ -87,7 +71,6 @@
 					</ul>
 				</p>
 			</div>
-
 			<!-- SERVICIOS -->
 			<div id="biblio_servicios" class="col s12 content_urep ocultar">
 				<p>
@@ -103,79 +86,59 @@
 						</ul>
 					</div>
 					<div class="col s12 m9">
-
 						<!-- PRESTAMOS -->
 						<div id="serv_prestamo" class="content_inter ocultar">
 							<p>
 								<h4>Prestamo de Material</h4>
-
 								<h5>Tutorial - Busqueda de material en el Catalogo</h5>
 								<iframe width="100%" height="315" src="https://www.youtube.com/embed/cQrlLWd0nHM?rel=0" frameborder="0" allowfullscreen></iframe>
-
 								<h5>Préstamo externo o a domicilio</h5>
 								Es el servicio mediante el cual los usuarios de Comunidad Republicana pueden llevar dos materiales (libros, revistas, videos, etc.) de la colección general, por dos días hábiles; este préstamo puede ser renovado por el mismo tiempo, siempre y cuando el material no haya sido reservado por otro usuario.
 								<br>El material de la colección de reserva y de referencia, se presta para domicilio después de las 9:30 p.m., para su devolución al día siguiente antes de las 9:00 a.m.; si el préstamo se solicita el día sábado, éste se debe realizar después de las 12:30 p.m. y tendrá que ser devuelto el siguiente día hábil, antes de las 9:00 a.m. El préstamo de este material no puede ser renovado.
-
 								<h5> Préstamo interno </h5> 
 								Mediante este servicio los usuarios pueden consultar todas las colecciones de la Biblioteca durante el horario de servicio de la misma, dentro o fuera de las salas de lectura; se exceptúan las tesis de grado, las cuales solamente se pueden consultar dentro de las instalaciones de la Biblioteca.
-
 								<h5> Préstamo interbibliotecario </h5> 
 								A través de este servicio, los miembros de la comunidad republicana pueden tener acceso al préstamo externo del material bibliográfico de otras bibliotecas universitarias y de entidades públicas y privadas, con las cuales la Biblioteca de la Corporación ha establecido convenio. Ingrese aquí para conocer la lista y los catálogos en línea  de las instituciones con las cuales se tiene convenio de préstamo interbibliotecario.
 								<br>El servicio puede solicitarse en la biblioteca o diligenciando el formato que encontrará en el sistema académico en la sección de Biblioteca, <a target="_blank" href="https://academiaurepublicana.org/ArKa/test/new_login.php"> aquí.</a>
-
 							</p>
 						</div>
-
 						<!-- RENOVACION -->
 						<div id="serv_renovacion" class="content_inter ocultar">
 							<p>
 								<h4>Renovación y reserva de material</h4>
-
 								Los usuarios pueden ampliar la fecha de devolución del material bibliográfico e igualmente pueden reservar el material que se encuentra prestado. La renovación del préstamo solamente se puede hacer el día de vencimiento del mismo.
 								<br>La renovación y la reserva se pueden realizar presencialmente en la Biblioteca o el línea ingresando al catálogo con su usuario y contraseña.
-
 								<h5>Tutorial - Renovación de Material</h5>
 								<iframe width="100%" height="315" src="https://www.youtube.com/embed/Hv2wC1XmW6k?rel=0" frameborder="0" allowfullscreen></iframe>
-
 								<h5>Tutorial - Reserva de Material</h5>
 								<iframe width="100%" height="315" src="https://www.youtube.com/embed/VqFN04oZtqo?rel=0" frameborder="0" allowfullscreen></iframe>
-
 							</p>
 						</div>
-
 						<!-- OTROS -->
 						<div id="serv_otros" class="content_inter ocultar">
 							<p>	
 								<h4>Otros Servicios</h4>
-
 								<h5> Cartas de Presentación</h5>
 								Las cartas de presentación permiten a la comunidad republicana el acceso a otras bibliotecas de la ciudad.
 								<br>El servicio puede solicitarse en la biblioteca o diligenciando el formato que encontrará en el sistema académico en la sección de Biblioteca, <a target="_blank" href="https://academiaurepublicana.org/ArKa/test/new_login.php">aquí</a>
-
 								<h5> Elaboración de Bibliografías</h5>
 								Recopilación de las reseñas bibliográficas sobre un tema específico, a solicitud del usuario, a partir de las colecciones de la Biblioteca de la Corporación.
 								<br>El servicio puede solicitarse en la biblioteca o diligenciando el formato que encontrará en el sistema académico en la sección de Biblioteca, <a target="_blank" href="https://academiaurepublicana.org/ArKa/test/new_login.php">aquí</a>
-
 								<h5> Formación de Usuarios</h5>
 								Inducciones y capacitaciones sobre el uso y el manejo de los servicios y recursos de la Biblioteca.
 								<br>Las inducciones están dirigidas a los docentes y los estudiantes nuevos y consiste en una revisión general de los servicios presenciales y en línea que ofrece la Biblioteca.
 								<br>Mediante las capacitaciones se ofrece a estudiantes y docentes la posibilidad de aprender a utilizar el Catálogo en línea y las bases de datos. Las capacitaciones se pueden solicitar personalmente en la Biblioteca.
-
 								<h5> Servicio de Referencia</h5>
 								Es el servicio de asesoría que el personal de la Biblioteca presta de forma individualizada a un usuario, para la búsqueda y recuperación de información.
-
 								<h5> Préstamo de equipos audiovisuales</h5>
 								La Biblioteca cuenta con herramientas como video beam y computadores portátiles, disponibles para apoyar las actividades académicas de la comunidad republicana. La reserva de estos equipos debe hacerse directamente en la Biblioteca, con mínimo 3 días de anticipación a la actividad.
-
 								<h5> Red Inalámbrica</h5>
 								Contamos con red inalámbrica en todos los espacios de la Biblioteca para la conexión de equipos móviles.
 							</p>
 						</div>
-
 					</div>
 				</div>
 			</div>
-
 			<!-- RECURSOS -->
 			<div id="biblio_recursos" class="col s12 content_urep ocultar">
 				<div class="row">
@@ -199,7 +162,6 @@
 									Ofrece información clasificada en diferentes áreas a saber: Administración pública, Comercio exterior, Servicios Públicos, Derecho penal, Laboral, Financiero y Tributario. Incluye los siguientes servicios: ediciones diarias, ediciones históricas, colecciones de legislación, normatividad y jurisprudencia, códigos, estatutos, regímenes actualizados y concordados, minutas o formas legales, impuestos municipales, diccionarios jurídicos y financieros, además de noticias diarias.
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a href="https://academiaurepublicana.org/ArKa/test/new_login.php" target="_blank">
@@ -211,7 +173,6 @@
 									Se publican trabajos de investigación, artículos, manuales, libros (todo full text), software, tutoriales, herramientas complementarias, noticias, eventos, becas, documentos de gerencia y empresa, y además ejemplos de vida y documentos de liderazgo y crecimiento personal
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a href="https://academiaurepublicana.org/ArKa/test/new_login.php" target="_blank">
@@ -223,7 +184,6 @@
 									Publicaciones y Revistas Sociales y Humanísticas. es un servicio integral de referencia que pone a disposición de los usuarios revistas científicas de texto completo sobre ciencias sociales y humanidades destinadas al estudio académico e interdisciplinario de América Latina e Hispanoamérica, y la Cuenca del Caribe.
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a href="https://academiaurepublicana.org/ArKa/test/new_login.php" target="_blank">
@@ -238,7 +198,6 @@
 						</tbody>
 					</table>
 				</div>
-
 				<div class="row">
 					<h5>Bases de datos Libres</h5>
 					<table class="striped">
@@ -340,7 +299,6 @@
 									es un esfuerzo de colaboración de cientos de voluntarios en 93 países para mejorar la difusión de la investigación en Economía y ciencias relacionadas
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="#!">
@@ -351,8 +309,6 @@
 									La Plataforma Open Access de Revistas Científicas Electrónicas Españolas y Latinoamericanas e-Revistas es un proyecto impulsado por el Consejo Superior de Investigaciones Científicas (CSIC) con el fin de contribuir a la difusión y visibilidad de las revistas científicas publicadas en América Latina, Caribe, España y Portugal.
 								</td>
 							</tr>
-
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://portal.pepsic.bvsalud.org/php/index.php">
@@ -363,7 +319,6 @@
 									Este portal tiene como objetivo principal contribuir a la visibilidad del conocimiento psicológico y científico generado en los países de América Latina, a partir de la publicación de revistas científicas en acceso abierto.
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.oapen.org/home">
@@ -374,7 +329,6 @@
 									Contiene libros académicos de acceso libre, principalmente en el área de Humanidades y Ciencias Sociales.
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="#!">
@@ -385,7 +339,6 @@
 									Es un programa de revistas de acceso abierto. Todos los artículos de investigación publicados disponibles de forma gratuita para leer, descargar y compartir
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="https://www.chemweb.com/">
@@ -396,7 +349,6 @@
 									acceso a artículos seleccionados de texto completo de editores de Química como Wiley, Elsevier y Springer. Los miembros pueden descargar una selección de artículos que abarcan una amplia gama de temas directamente desde las páginas de algunas de las revistas más respetadas en química.
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.suin-juriscol.gov.co/">
@@ -407,7 +359,6 @@
 									Permite ubicar de forma rápida y gratuita, normas de carácter general y abstracto como las constituciones de 1886 y de 1991, actos legislativos, leyes, decretos, directivas presidenciales, resoluciones, circulares, entre otros, a partir de 1886, con sus respectivas concordancias y afectaciones normativas y jurisprudenciales.
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="https://www.osti.gov/scitech/">
@@ -418,7 +369,6 @@
 									conexión a la información de investigación científica, tecnológica y de ingeniería del Departamento de Energía de EE. UU. 
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://eur-lex.europa.eu/homepage.html">
@@ -429,7 +379,6 @@
 									El acceso al Derecho de la Unión Europea 
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="https://worldwidescience.org/">
@@ -440,7 +389,6 @@
 									Es una puerta de acceso científica mundial compuesta por bases de datos y portales científicos nacionales e internacionales
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.artehistoria.com/">
@@ -451,7 +399,6 @@
 									Contiene información de consulta libre sobre acontecimientos mundiales historia del arte, historia universal e historia de España
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.wipo.int/reference/es/">
@@ -462,7 +409,6 @@
 									Es la principal fuente de datos en el mundo sobre el sistema de propiedad intelectual (P.I.), así como sobre estudios empíricos, informes y datos sobre P.I. Todas las publicaciones y las colecciones de datos de la OMPI están disponibles en Internet sin cargo
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.sic.gov.co/node/11443">
@@ -473,7 +419,6 @@
 									El Centro de Información Tecnológica y Apoyo a la Gestión de la Propiedad Industrial (CIGEPI) es el encargado de proporcionar servicios de información tecnológica y orientación especializada en temas de Propiedad Industrial en Colombia
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="https://www.redib.org/">
@@ -484,7 +429,6 @@
 									es una plataforma de agregación de contenidos científicos y académicos en formato electrónico producidos en el ámbito iberoamericano
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://oaji.net/">
@@ -495,7 +439,6 @@
 									es una base de datos de texto completo de revistas científicas de acceso abierto. Fundador - Centro de redes internacionales para investigación fundamental y aplicada, Federación de Rusia.  Nuestra misión es desarrollar una plataforma internacional para indexar las revistas científicas de acceso abierto.
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="https://scholar.google.es/">
@@ -506,7 +449,6 @@
 									es un buscador que te permite localizar documentos académicos como artículos, tesis, libros y resúmenes de fuentes diversas como editoriales universitarias, asociaciones profesionales, repositorios de preprints, universidades y otras organizaciones académicas
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.dotec-colombia.org/">
@@ -517,7 +459,6 @@
 									es un proyecto virtual que busca centralizar y divulgar la investigación económica en Colombia
 								</td>
 							</tr>
-
 							<tr>
 								<td>
 									<a target="_blank" href="http://www.citrevistas.cl/b2.htm">
@@ -528,12 +469,9 @@
 									es un Índice Internacional de revistas publicadas en idioma Castellano, en diversos países iberoamericanos.  Actualidad Iberoamericana provee información básica sobre revistas en idioma castellano en diversas áreas de las ciencias, las ingenierías y las humanidades, y las cataloga por áreas del conocimiento.
 								</td>
 							</tr>
-
-
 						</tbody>
 					</table>
 				</div>
-
 				<h5>Revistas Electrónicas de Acceso Libre </h5>
 				<div class="row center">
 					<a target="_blank" href="<?= URL_MASTER ?>/images/web/biblioteca/revistasDerecho.pdf" class="waves-effect waves-light btn-large red darken-4" >Derecho</a>
@@ -542,24 +480,16 @@
 					<a target="_blank" href="<?= URL_MASTER ?>/images/web/biblioteca/revistasIngenieriaMatematica.pdf" class="waves-effect waves-light btn-large red darken-4" >Ingenieria y Matematicas</a>
 				</div>
 			</div>
-
 			<!-- NUEVAS ADQUISICIONES -->
 			<div id="biblio_nuevas" class="col s12 content_urep ocultar">
 				<h5>Nuevas Adquisiciones</h5>
-				
 				<div class="row center">
 					<a href="<?= URL_MASTER ?>/images/web/biblioteca/Nuevas-Adquisiciones-Libros.pdf" class="waves-effect waves-light btn-large red darken-4" target="_blank" >Libros</a>
 					<a href="<?= URL_MASTER ?>/images/web/biblioteca/Nuevas-Adquisiciones-Revistas.pdf" class="waves-effect waves-light btn-large red darken-4" target="_blank" >Revistas</a>
 					<a href="<?= URL_MASTER ?>/images/web/biblioteca/Nuevas-Adquisiciones-Tesis.pdf" class="waves-effect waves-light btn-large red darken-4" target="_blank" >Trabajos de Grado</a>
 				</div>	
-
 			</div>
-
-
-
 		</div>
-
-
 	</div>
 	<?php require_once('../plantilla/footer.php'); ?>
 </body>

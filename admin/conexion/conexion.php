@@ -1,13 +1,10 @@
 <?php
-
-
 define('DB_HOST','localhost');
 // define('DB_HOST','104.152.109.121');
 define('DB_USER','campusvi_campus');
 define('DB_PASS','campus_urep.2016');
-define('DB_NAME','campusvi_pag_urep');
+define('DB_NAME','campusvi_pag_backup');
 define('DB_CHARSET','utf-8');
-
 class Conexion{
     protected $_db;
     public function __construct(){
@@ -20,8 +17,4 @@ class Conexion{
         $this->_db->query("SET NAMES 'utf8' ");
     }
 }
-
-
-
-
 ?>

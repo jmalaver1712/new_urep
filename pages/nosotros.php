@@ -6,7 +6,6 @@
 <body id="body_urep">
 	<?php require_once('../plantilla/menu.php'); ?>
 	<div class="breadcrumb"><a href="index.php"> Inicio </a> > <a href="nosotros.php"> Nosotros </a></div>
-
 	<div class="container">
 		<div class="row center">
 			<div class="col s12">
@@ -14,7 +13,6 @@
 				<h2>Nosotros</h2>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col s12 m3">
 				<ul>
@@ -26,12 +24,10 @@
 				</ul>
 			</div>
 			<div class="col s12 m9">
-
 				<!-- Naturaleza -->
 				<div id="naturaleza" class="content_inter">
 					<p>
 						<h5>Naturaleza</h5>
-
 						La CORPORACIÓN UNIVERSITARIA REPUBLICANA, con domicilio en Bogotá, es una entidad de Educación Superior de carácter privado y sin ánimo de lucro con personería jurídica No. 3061 emanada del Ministerio de Educación Nacional y con registro ICFES No. 2837, dentro del marco de la Constitución Política que consagra su autonomía legal, se determinan las siguientes acciones de acuerdo con las leyes vigentes:
 						<ul>
 							<li><b> * </b> Darse y modificar sus estatutos.</li>
@@ -43,30 +39,24 @@
 						</ul>
 					</p>
 				</div>
-
 				<!-- Vision -->
 				<div id="vision" class="content_inter ocultar">
 					<p>
 						<h5>Vision</h5>
-
 						La CORPORACIÓN UNIVERSITARIA REPUBLICANA espera constituirse en el pilar de la formación permanente e integral, capaz de generar cambios de profunda resignificación en el contexto nacional e internacional; fomentando los valores éticos y morales, el respeto a los derechos de los demás, el cultivo de los talentos profesionales y el estímulo a las vocaciones intelectuales y científicas siendo imprescindibles para mejorar la convivencia social, el domino técnico de los problemas, la comprensión del mundo globalizado contemporáneo y la calidad de vida.
 					</p>
 				</div>
-
 				<!-- Mision -->
 				<div id="mision" class="content_inter ocultar">
 					<p>
 						<h5>Vision</h5>
-
 						La misión Institucional de la CORPORACIÓN UNIVERSITARIA REPUBLICANA apunta esencialmente a la preparación integral de nuestros educandos, mediante estrategias participativas de enseñanza, aprendizaje y formación, que integren la docencia, la investigación y la extensión, dentro de claros principios humanísticos, éticos y ecológicos, para viabilizar el progreso individual y colectivo, en todos los campos del saber, acordes con el carácter institucional legalmente reconocido.
 					</p>
 				</div>
-
 				<!-- principios_rectores -->
 				<div id="principios_rectores" class="content_inter ocultar">
 					<p>
 						<h5>Principios Rectores</h5>
-
 						La CORPORACIÓN UNIVERSITARIA REPUBLICANA adopta como misión institucional la formación integral de los colombianos, ética, social y científicamente, dentro de los siguientes parámetros esenciales:
 						<ul>
 							<li><b> * </b> El impulso a la creación, desarrollo y transmisión de conocimiento, dentro de los campos de acción que legalmente pueda cubrir.</li>
@@ -77,7 +67,6 @@
 						</ul>
 					</p>
 				</div>
-
 				<!-- principios_rectores -->
 				<div id="fundamentos" class="content_inter ocultar">
 					<p>
@@ -93,17 +82,9 @@
 						</ul>
 					</p>
 				</div>
-
-
 			</div>
-
 		</div>
-
-
-
 	</div>
-
 	<?php require_once('../plantilla/footer.php'); ?>
-
 </body>
 </html>

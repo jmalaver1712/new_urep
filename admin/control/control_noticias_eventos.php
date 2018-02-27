@@ -2,7 +2,7 @@
 
 require_once('../class/class_noticias_eventos.php');
 require_once('../class/helper.php');
-
+noCache();
 
 if (isset($_POST['accion'])) {
 
@@ -20,9 +20,9 @@ if (isset($_POST['accion'])) {
 	}
 
 	$file = upload_doc($_FILES['imagen'] ,"../../images/noticias_eventos/");
-
 	$galeria_array = $_FILES['galeria'];
 	$imagenes =  transpose($galeria_array);
+
 
 	// INSERTAR
 	if ($_POST['accion'] == "agregar"){
@@ -38,7 +38,7 @@ if (isset($_POST['accion'])) {
 						sleep(2);
 					}
 				}
-			
+				
 			}
 			print("<meta http-equiv='refresh' content='2.0;url=../generar.php'>");
 		}else{
@@ -54,7 +54,20 @@ if (isset($_POST['accion'])) {
 	// EDITAR
 	if ($_POST['accion'] == "editar"){
 		$editar = $noticias_eventos_bd->editar($_POST, $file);
-		if($editar == 1){
+		if($editar != 0){
+
+			if(isset($_FILES['galeria'])){
+
+				foreach($imagenes as $imagen_gal){
+					if ($imagen_gal['name'] != "") {
+						$file_gal = upload_doc($imagen_gal ,"../../images/noticias_eventos/galeria/");
+						$editar_gal = $noticias_eventos_bd->insertar_galeria($editar, "imagen" ,$file_gal);
+						sleep(2);
+					}
+				}
+				
+			}
+
 			print("<meta http-equiv='refresh' content='2.0;url=../generar.php'>");
 		}else{
 			?>
@@ -65,6 +78,13 @@ if (isset($_POST['accion'])) {
 			<?php
 		}
 	}
+
+	if ($_POST['accion'] == "upload_doc"){
+		$file_add = upload_doc($_FILES['archivo_add'] ,"../../images/noticias_eventos/galeria/");
+		echo $file_add;
+	}
+
+	
 	
 }
 

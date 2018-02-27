@@ -7,20 +7,69 @@ class noticias_eventos_bd extends Conexion{
 		parent::__construct();
 	}
 
+
+	public function caracteres($url){
+		
+		$url = strtolower($url);
+     //Reemplazamos caracteres especiales latinos
+		$find = array('á','é','í','ó','ú','â','ê','î','ô','û','ã','õ','ç','ñ','Á','É','Í','Ó','Ú','Â','Ê','Î','Ô','Û','Ã','Õ','Ç','Ñ');
+		$repl = array('a','e','i','o','u','a','e','i','o','u','a','o','c','n','a','e','i','o','u','a','e','i','o','u','a','o','c','n');
+		$url = str_replace($find, $repl, $url);
+     //Añadimos los guiones bajos
+		$find = array(' ', '&amp;', '\r\n', '\n','+');
+		$url = str_replace($find, '_', $url);
+     //Eliminamos y Reemplazamos los demas caracteres especiales
+		$find = array('/[^a-z0-9\_&lt;&gt;]/', '/[\_]+/', '/&lt;{^&gt;*&gt;/');
+		$repl = array('', '_', '');
+		$url = preg_replace($find, $repl, $url);
+
+		return $url;
+	}
+
+
+	public function items($id_noticias_eventos, $items){
+		$data = 0;
+		$result_1 = $this->_db->query("DELETE FROM item_noticias_eventos WHERE id_noticias_eventos = $id_noticias_eventos");
+		if (!$result_1) {
+			printf("Errormessage al Insertar noticias_eventos : %s\n\n", $this->_db->error);
+		}
+		foreach ($items as $key => $value) {
+			$result_2 = $this->_db->query("
+				INSERT INTO item_noticias_eventos (id_item, id_noticias_eventos, visible, orden) VALUES ('$value', '$id_noticias_eventos', '1', '0');
+				");
+
+			if (!$result_2) {
+				printf("Errormessage al Insertar noticias_eventos : %s\n\n", $this->_db->error);
+			}
+
+
+		}
+		$data = 1;
+		return $data;
+	}
+
+
+
 	public function insertar($datos, $imagen){
 		$data = 0;
 		$fecha_publicacion = date("Y-m-d");
-		
+
+		$titular = strtoupper($datos['titular']);
+		$name = $this->caracteres($datos['titular']);
+
 		$result = $this->_db->query("
 			INSERT INTO noticias_eventos 
-			(tipo, titular, enlace, importancia, imagen, fecha_publicacion, resumen, noticia, visible, orden) VALUES 
-			('$datos[tipo]', '$datos[titular]', '$datos[enlace]', '$datos[importancia]', '$imagen', '$fecha_publicacion', '$datos[resumen]', '$datos[noticia]', '1', '0')
+			(tipo, titular, name, enlace, importancia, imagen, fecha_publicacion, resumen, noticia, visible, orden) VALUES 
+			('$datos[tipo]', '$titular', '$name','$datos[enlace]', '$datos[importancia]', '$imagen', '$fecha_publicacion', '$datos[resumen]', '$datos[noticia]', '1', '0')
 			");
 		if (!$result) {
 			printf("Errormessage al Insertar noticias_eventos : %s\n\n", $this->_db->error);
-		}
+		}	
 		else{
 			$data = $this->_db->insert_id;
+			if(isset($datos['item'])){
+				$name = $this->items($data, $datos['item']);
+			}
 		}
 		return $data;
 	}
@@ -32,7 +81,7 @@ class noticias_eventos_bd extends Conexion{
 			UPDATE noticias_eventos SET 
 			orden = '$datos[orden]'  
 			WHERE id = '$datos[id]'
-		");
+			");
 		if (!$result) {
 			printf("Errormessage al Cambiar Orden noticias_eventos : %s\n\n", $this->_db->error);
 		}
@@ -75,9 +124,13 @@ class noticias_eventos_bd extends Conexion{
 			$importancia = 0;
 		}
 
+		$titular = strtoupper($datos['titular']);
+		$name = $this->caracteres($datos['titular']);
+
 		$result = $this->_db->query("UPDATE noticias_eventos SET 
 			tipo = '$datos[tipo]' , 
-			titular = '$datos[titular]' , 
+			titular = '$titular' , 
+			name = '$name' , 
 			enlace = '$datos[enlace]' , 
 			importancia = '$importancia' , 
 			imagen = '$imagen' , 
@@ -89,7 +142,10 @@ class noticias_eventos_bd extends Conexion{
 			printf("Errormessage al Editar noticias_eventos : %s\n\n", $this->_db->error);
 		}
 		else{
-			$data = 1;
+			if(isset($datos['item'])){
+				$name = $this->items($datos['id'], $datos['item']);
+			}
+			$data = $datos['id'];
 		}
 		return $data;
 	}
@@ -98,7 +154,7 @@ class noticias_eventos_bd extends Conexion{
 	public function eliminar($id){
 		$data = 0;
 		$registro = $this->select($id);
-
+		
 		$result = $this->_db->query("UPDATE noticias_eventos SET visible = '0' WHERE id = $id ");
 		if (!$result) {
 			printf("Errormessage al Eliminar noticias_eventos : %s\n\n", $this->_db->error);
@@ -124,6 +180,8 @@ class noticias_eventos_bd extends Conexion{
 		}
 		return $data;
 	}
+
+
 
 }
 

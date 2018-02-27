@@ -1,7 +1,7 @@
 <?php 
 require_once('../conexion/conexion.php');
 
-class libros_bd extends Conexion{
+class gaceta_bd extends Conexion{
 
 	public function __construct(){
 		parent::__construct();
@@ -53,6 +53,6 @@ class libros_bd extends Conexion{
 
 }
 
-$libros_bd = new libros_bd();
+$gaceta_bd = new gaceta_bd();
 
 ?>

@@ -31,6 +31,7 @@ jQuery("#slider_main").layerSlider({
 
 
 
+
 // MENU PRINCIPAL
 $(".enlace_menu").click(function() {
 	var x = $(this).attr("name");
@@ -52,16 +53,6 @@ $(".enlace_menu").click(function() {
 $('.enlace_menu').click(function (e) {
 	e.stopPropagation();
 });
-
-
-$(".post_variable").click(function(){
-	var target = $(this).attr("title");
-	var id = $(this).attr("name");
-	$("#redireccion_urep").attr("action", target);
-	$("#variable_urep").attr("value", id);
-	$("#redireccion_urep").submit();
-});
-
 
 // SUB MENUS 
 $('.enlace_menu_2').click(function (e) {
@@ -171,7 +162,7 @@ $('.confirmar_url').on('click', function () {
 });
 
 
-
+// ORDENAR
 $(".orden_not").change(function() {
 	var id = $(this).attr("name");
 	var orden = $(this).val();
@@ -188,6 +179,4 @@ $(".orden_not").change(function() {
 		// alert( "ID = "+id+" Orden = "+data);
 	}
 	});
-
-	
 });

@@ -8,50 +8,40 @@
 <body id="body_urep">
 	<?php require_once('../plantilla/menu.php'); ?>
 	<div class="breadcrumb"> <a href="<?= URL_MASTER ?>/pages/"> Inicio </a> > <a href="<?= URL_MASTER ?>/pages/internacionalizacion.php"> Internacionalización </a></div>
-
-
 	<!-- ENLACES RAPIDOS - ATAJOS -->
 	<div class="container">
 		<div class="row center">
-			<h4>OFICINA DE RELACIONES INTERNACIONALES</h4>
+			<h2>Oficina de Relaciones Internacionales</h2>
 			<img src="<?= URL_MASTER ?>/images/web/ori/banner_ori.jpg" width="100%">
 		</div>
-
 		<div class="row lnk_first">
 			<div class="col s12 m2"><br></div>
-
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#quienes_somos">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/ori/inter_somos_1.png" src="<?= URL_MASTER ?>/images/web/ori/inter_somos.png">
 					<p>Quiénes Somos</p>
 				</span>
 			</div>
-
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#estudiantes_urep">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/ori/inter_student_1.png" src="<?= URL_MASTER ?>/images/web/ori/inter_student.png">
 					<p>Estudiantes Republicanos</p>
 				</span>
 			</div>
-
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#estudiantes_ext">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/ori/inter_student_ext_1.png" src="<?= URL_MASTER ?>/images/web/ori/inter_student_ext.png">
 					<p>Estudiantes Externos</p>
 				</span>
 			</div>
-
 			<div class="col s3 m2">
 				<span class="enlace_urep" name="#becas">
 					<img class="atajo" name="<?= URL_MASTER ?>/images/web/ori/inter_becas_1.png" src="<?= URL_MASTER ?>/images/web/ori/inter_becas.png">
 					<p>Becas</p>
 				</span>
 			</div>
-
 		</div>
-
 		<div class="row">
-
 			<!-- QUIENES SOMOS -->
 			<div id="quienes_somos" class="col s12 content_urep ocultar">
 				<p>	
@@ -61,16 +51,14 @@
 					</p>
 					<br>
 					<b>EQUIPO ORI</b><br>
-					TATIANA TÉLLEZ DURÁN
-					<br>
-					Directora de la Oficina de Relaciones Internacionales
-					<br>
-					+ 57 286 23 84 Ext. 116
-					<br>
-					relacionesinternacionales@urepublicana.edu.co
+					Félix Leonardo Plazas Estepa
+					<br>Director Oficina de Relaciones Internacionales
+					<br>Tel.: + 57 286 23 84 Ext. 116
+					<br>Móvil: 3142573349
+					<br>Cra 7 # 19-38 Piso 5° - Sede Administrativa 
+					<br>relacionesinternacionales@urepublicana.edu.co
 				</p>
 			</div>
-			
 			<!-- ESTUDIANTES UREPUBLICANOS -->
 			<div id="estudiantes_urep" class="col s12 content_urep ocultar">
 				<div class="row">
@@ -79,10 +67,8 @@
 						<li class="tab"><a class="active" href="#intercambio">Intercambio</a></li>
 						<li class="tab"><a href="#idioma_ext">Idiomas</a></li>
 					</ul>
-					
 					<!-- INTERCAMBIO -->
 					<div id="intercambio" class="col s12">
-
 						<div class="row">
 							<div class="col s12 m3">
 								<h5 class="center">INTERCAMBIO</h5>
@@ -97,15 +83,12 @@
 								</ul>
 							</div>
 							<div class="col s12 m9">
-
-
 								<!-- INFORMACION GENERAL -->
 								<div id="general_urep" class="content_inter">
 									<p>
 										Uno de los aspectos más importantes para realizar una movilidad preparada y con una economía mejor planeada, es conocer y evaluar el costo de vida del país al que decidas viajar. Esta planeación te permitirá conocer y ampliar el panorama con respecto a los recursos suficientes (manutención, alojamiento, gastos personales etc.) que requieres para permanecer en tu movilidad.<br>
 										Para ello, puedes consultar los siguientes enlaces en los cuales podrás calcular el costo de vida del país y/o región donde realizarás tu estancia académica:
 										<br>
-
 										<ul>
 											<li><b>1. </b><a target="_blank" href="https://www.numbeo.com/cost-of-living/"> Numbeo </a> </li>
 											<li><b>2. </b><a target="_blank" href="http://www.eardex.com/"> Eardex </a> </li>
@@ -122,10 +105,8 @@
 								</div>
 								<!-- CONVENIOS UREP -->
 								<div id="convenios_urep" class="content_inter ocultar">
-
 									<iframe src="https://www.google.com/maps/d/embed?mid=19bYJ793T71IXAcjxWa4SdB_ahbM&ll=70.428037905912461%2C-99.88245810289459&z=2" width="640" height="480"></iframe>
 								</div>
-
 								<!-- REQUISITOS UREP -->
 								<div id="requisitos_urep" class="content_inter ocultar">
 									<p>
@@ -144,7 +125,6 @@
 										</center>
 									</p>
 								</div>
-
 								<!-- COMO DEBES APLICAR -->
 								<div id="como_aplicar_urep" class="content_inter ocultar">
 									<p>
@@ -162,7 +142,6 @@
 											<li> <b>11 </b>	Cualquier otro documento que se requiera al momento de la movilidad.</li>	
 											</li>
 										</ul>
-
 										<center>
 											<a class="waves-effect waves-light btn red darken-3" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES
@@ -170,7 +149,6 @@
 										</center>
 									</p>
 								</div>
-
 								<div id="homologacion_urep" class="content_inter ocultar">
 									<p>
 										Para que la homologación de asignaturas en la Corporación sea todo un éxito, debes seguir al pie de la letra los siguientes pasos:
@@ -183,7 +161,6 @@
 											<br>
 											<li> <b>3.</b> <span style="font-weight: bold;">Persona encargada de validar las asignaturas a homologar:</span> Decano y/o Coordinador del Programa respectivo.</li>
 										</ul>
-
 										<center>
 											<a class="waves-effect waves-light btn red darken-3" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES
@@ -191,13 +168,11 @@
 										</center>
 									</p>
 								</div>
-
 								<div id="visas_urep" class="content_inter ocultar">
 									<p>
 										La Corporación Universitaria Republicana no cuenta con convenios con Embajadas y/o Consulados para realizar el trámite de visas de estudiantes, docentes y funcionarios ni tampoco puede interceder para solicitar citas.
 										<br>
 										Sin embargo, la ORI puede otorgar a la comunidad de la Corporación que vaya realizar una actividad académica en el exterior, una carta presentándolos al respectivo Consulado y/o Embajada.
-
 										<table class="striped">
 											<thead>
 												<tr>
@@ -210,17 +185,14 @@
 													<td><img src="<?= URL_MASTER ?>/images/web/ori/argentina.jpg" width="100%"></td>
 													<td><a target="_blank" href="http://visaestudiantil.gob.ar/"> Argentina </a></td>
 												</tr>
-
 												<tr>
 													<td><img src="<?= URL_MASTER ?>/images/web/ori/peru.jpg" width="100%"></td>
 													<td><a target="_blank" href="http://www.embajadadelperu.org.co/index.html">Perú </a></td>
 												</tr>
-
 												<tr>
 													<td><img src="<?= URL_MASTER ?>/images/web/ori/espana.jpg" width="100%"></td>
 													<td><a target="_blank" href="http://www.exteriores.gob.es/Consulados/BOGOTA/es/InformacionParaExtranjeros/Paginas/RequisitosDeEntrada.aspx">España </a></td>
 												</tr>
-
 												<tr>
 													<td><img src="<?= URL_MASTER ?>/images/web/ori/eeuu.jpg" width="100%"></td>
 													<td><a target="_blank" href="https://travel.state.gov/content/visas/en/study-exchange/student.html">Estados Unidos</a></td>
@@ -229,8 +201,6 @@
 										</table>
 									</p>
 								</div>
-
-
 								<div id="regreso_urep" class="content_inter ocultar">
 									<p>
 										La ORI notifica a la Oficina de registro y control para que genere tu recibo de pago de matrícula. Si cuentas con una beca debes comunicarte con el Departamento encargado.
@@ -239,24 +209,18 @@
 											<li><b>2.</b> La Universidad Anfitriona debe enviar a la ORI el certificado de notas vistas por el estudiante de la Corporación.</li>
 											<li><b>4.</b> Si luego del intercambio deseas realizar una práctica internacional, debes comunicarlo a tu Facultad por medio escrito en las fechas establecidas, con el fin de hacer la evaluación respectiva y brinden su concepto en cuanto a la pertinencia con los estudios realizados.</li>
 										</ul>
-
 										<center>
 											<a class="waves-effect waves-light btn red darken-3" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_UREP.pdf" target="_blank">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES
 											</a>
 										</center>
-
 									</p>
 								</div>
-
 							</div>
 						</div>
 					</div>
-
-
 					<!-- Idioma Exterior -->
 					<div id="idioma_ext" class="col s12">
-
 						<div class="row">
 							<div class="col s12 m3">
 								<h5 class="center">IDIOMA EXTERIOR</h5>
@@ -266,8 +230,6 @@
 								</ul>
 							</div>
 							<div class="col s12 m9">
-
-
 								<!-- INFORMACION GENERAL -->
 								<div id="cursos_idext" class="content_inter">
 									<img src="<?= URL_MASTER ?>/images/web/ori/ccls.png" style="float: left; margin: 10px; width: 150px">
@@ -281,14 +243,12 @@
 										<a target="_blank" href="http://www.cclscorp.com/intensive_english/faq_spa/index.html"> aqui </a>
 									</p>
 								</div>
-
 								<!-- REQUISITOS UREP -->
 								<div id="examen_idext" class="content_inter ocultar">
 									<p>
 										Si te encuentras listo para presentar una prueba internacional en inglés o francés, acá te brindamos la información de los lugares certificados donde puedes hacerlo:
 										<div class="row">
 											<div class="col s12 m12">
-
 												<table class="striped">
 													<thead>
 														<tr>
@@ -298,7 +258,6 @@
 														</tr>
 													</thead>
 													<tbody>
-
 														<tr>
 															<td>
 																<img src="<?= URL_MASTER ?>/images/web/ori/BRITISH_COUNCIL.png" width="100%">
@@ -312,7 +271,6 @@
 																<br> CAE
 															</td>
 														</tr>
-
 														<tr>
 															<td>
 																<img src="<?= URL_MASTER ?>/images/web/ori/COLOMBO_AMERICANO.png" width="100%">
@@ -326,7 +284,6 @@
 																<br> TOEIC BRIDGE
 															</td>
 														</tr>
-
 														<tr>
 															<td>
 																<img src="<?= URL_MASTER ?>/images/web/ori/INSTITUTO_SMART.png" width="100%">
@@ -337,7 +294,6 @@
 																<br> MET
 															</td>
 														</tr>
-
 														<tr>
 															<td>
 																<img src="<?= URL_MASTER ?>/images/web/ori/INSTITUTO_MULTILINGUA.PNG" width="100%">
@@ -348,7 +304,6 @@
 																<br> MET
 															</td>
 														</tr>
-
 														<tr>
 															<td>
 																<img src="<?= URL_MASTER ?>/images/web/ori/ETS.png" width="100%">
@@ -359,7 +314,6 @@
 																<br> TOEFL
 															</td>
 														</tr>
-
 														<tr>
 															<td>
 																<img src="<?= URL_MASTER ?>/images/web/ori/ALIANZA_FRANCESA.png" width="100%">
@@ -371,24 +325,17 @@
 																<br> DALF
 															</td>
 														</tr>
-
 													</tbody>
 												</table>
-
-
 											</div>
-											
 										</div>
 									</p>
 								</div>
-
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
 			<!-- ESTUDIANTES EXTERNOS -->
 			<div id="estudiantes_ext" class="col s12 content_urep ocultar">
 				<div class="row">
@@ -400,10 +347,8 @@
 							<li class="tab col s2"><a href="#guia_externos">Guía para estudiantes</a></li>
 						</ul>
 					</div>
-
 					<!-- INTERCAMBIO EXTERNOS-->
 					<div id="intercambio_externos" class="col s12">
-
 						<div class="row">
 							<div class="col s12 m3">
 								<h5 class="center">INTERCAMBIO</h5>
@@ -415,8 +360,6 @@
 								</ul>
 							</div>
 							<div class="col s12 m9">
-
-
 								<!-- INFORMACION GENERAL -->
 								<div id="general_urep_ext" class="content_inter">
 									<p>
@@ -427,7 +370,6 @@
 								<div id="convenios_urep_ext" class="content_inter ocultar">
 									<iframe src="https://www.google.com/maps/d/embed?mid=19bYJ793T71IXAcjxWa4SdB_ahbM&ll=70.428037905912461%2C-99.88245810289459&z=2" width="640" height="480"></iframe>
 								</div>
-
 								<!-- REQUISITOS UREP EXTERNOS -->
 								<div id="requisitos_urep_ext" class="content_inter ocultar">
 									<p>
@@ -437,7 +379,6 @@
 											<li><b>3.</b> Debes elaborar una carta explicando las razones por las cuales deseas realizar el intercambio académico en la Corporación, esta carta debes entregarla a la ORI de tu Universidad y ella debe hacérnosla llegar junto con los demás documentos.</li>
 										</ul>
 										<h5 class="center"> Si quieres conocer la información completa, consulta el Manual para estudiantes visitantes</h5>
-
 										<center>
 											<a target="_blank" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES VISITANTES
@@ -445,7 +386,6 @@
 										</center>
 									</p>
 								</div>
-
 								<!-- LUEGO APLICAR UREP EXTERNOS -->
 								<div id="luego_aplicar_urep_ext" class="content_inter ocultar">
 									<p>
@@ -454,21 +394,17 @@
 											<li><b>2.</b> Se enviará a la ORI de tu Universidad, una carta de aceptación del intercambio.</li>
 											<li><b>3.</b> Se enviará a la ORI de tu Universidad, una carta de presentación ante migración de Colombia para facilitar el ingreso al país -si aplica-.</li>
 										</ul>
-
 										<h5 class="center"> Si quieres conocer la información completa, consulta el Manual para estudiantes visitantes</h5>
 										<center>
 											<a target="_blank" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES VISITANTES
 											</a>
 										</center>
-
 									</p>
 								</div>
-
 							</div>
 						</div>
 					</div>
-
 					<!-- PROGRAMAS EXTERNOS-->
 					<div id="programas_externos" class="col s12">
 						<div class="row">
@@ -486,7 +422,7 @@
 												<p class="autor_card"><b>Nivel Académico: </b><?= $programa->nivel_academico ?></p><br>
 											</div>
 											<div class="card-action">
-												<a href="<?= URL_MASTER ?>/pages/programas/<?= $programa->nivel_academico."/".$programa->name ?>" class="enlace">Mas información</a>
+												<a href="<?= URL_MASTER ?>/pages/programas/<?= $programa->nivel_academico."/".$programa->name ?>" class="enlace">Más información</a>
 											</div>
 										</div>
 									</div>
@@ -496,8 +432,6 @@
 							?>
 						</div>
 					</div>
-
-
 					<!-- GUIA EXTERNOS-->
 					<div id="guia_externos" class="col s12">
 						<div class="row">
@@ -513,22 +447,18 @@
 								</ul>
 							</div>
 							<div class="col s12 m9">
-
-
 								<!-- SEDES GUIA -->
 								<div id="sedes_guia" class="content_inter">
 									<p>
 										FOTOS
 									</p>
 								</div>
-
 								<!-- SISTEMA ACADEMICO GUIA -->
 								<div id="sistema_aca_guia" class="content_inter ocultar">
 									<p>
 										Un semestre se divide en 3 cortes. Los dos primeros cortes tienen una evaluación parcial de los temas tratados durante este periodo, en el último corte se realiza una evaluación final. La escala de calificación en la Corporación Universitaria Republicana es de 0 a 5.
 									</p>
 								</div>
-
 								<!-- SEDES GUIA -->
 								<div id="vida_guia" class="content_inter ocultar">
 									<p>
@@ -539,13 +469,9 @@
 											<li><b>*</b> Área de desarrollo humano</li>
 											<li><b>*</b> Área de salud</li>
 										</ul>
-
 										Para más información sobre estas actividades, te invitamos a ingresar al siguiente <a target="_blank" href="http://localhost/WEB/new_urep/images/web/bienestar/actividades_2017_2.pdf"> enlace </a>
-
 									</p>
 								</div>
-
-
 								<!-- BOGOTA UREP -->
 								<div id="bogota_guia" class="content_inter ocultar">
 									<p>
@@ -555,32 +481,26 @@
 											<li><b> Taxis: </b> Existen alrededor de 45.000 taxis. El costo del viaje depende del número de unidades que marque el taxímetro. El costo mínimo de un viaje en taxi es $4.100 pesos. Los recorridos al aeropuerto tienen un costo adicional de $3.900 pesos sobre el valor marcado en el taxímetro.</li>
 											<li><b> Ciclorutas: </b> Bogotá cuenta con una extensa red de ciclorutas que conecta diferentes sectores de la ciudad. Por ello, es posible llegar a la Corporación en bicicleta. La universidad cuenta con un espacio que guardes tu bicicleta.</li>
 										</ul>
-
 										<h5> Alimentación </h5>
 										<ul>
 											<li> Mientras tu organismo se acostumbra a la comida colombiana, te sugerimos consumir cantidades moderadas y tomar agua embotellada sobre todo cuando estés fuera de Bogotá.</li>
 											<li> En Bogotá encontraras pequeñas tiendas y grandes almacenes de cadena como: Éxito, Jumbo, Carulla, Alkosto entre otros. En ellos podrás encontrar objetos y alimentos que puedas necesitar.</li>
 											<li> Te sugerimos disfrutar de la gran variedad de verduras y frutas que encontrarás en nuestro país. Si quieres conocer un poco más de la gastronomia, consulta este enlace</li>
 										</ul>
-
 										<h5> Lugares de Interés </h5>
 										Bogotá ofrece una variedad de sitios de interés que van desde museos, parques, centros históricos, teatros, entre otros. Puedes consultarlos aquí: http://www.colombia.com/turismo/sitios-turisticos/bogota/ 
-
 										<h5 class="center"> Si quieres conocer la información completa, consulta el Manual para estudiantes visitantes</h5>
 										<center>
 											<a target="_blank" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
 												<i class="material-icons left">cloud_download</i>DESCARGA EL MANUAL DE ESTUDIANTES VISITANTES
 											</a>
 										</center>
-
 									</p>
 								</div>
-
 								<!-- BOGOTA UREP -->
 								<div id="migracion_guia" class="content_inter ocultar">
 									<p>
 										Todo estudiante internacional de intercambio deberá tramitar la visa de estudiante obligatoriamente. Para ello debe acercarse al Consulado Colombiano o Embajada de Colombia más cercana a su lugar de residencia.
-										
 										<h5 class="center"> Si quieres conocer la información completa, consulta el Manual para estudiantes visitantes</h5>
 										<center>
 											<a target="_blank" href="<?= URL_MASTER ?>/images/web/ori/MANUAL_MOVILIDAD_ESTUDIANTES_VISITANTES.pdf" class="waves-effect waves-light btn red darken-3">
@@ -589,9 +509,6 @@
 										</center>
 									</p>
 								</div>
-
-
-
 								<div id="visatp3_guia" class="content_inter ocultar">
 									<p>
 										Al extranjero que desee ingresar al territorio nacional en desarrollo de un programa académico, con beca o sin ella, impartido por un centro educativo o de formación del país debidamente certificado para tal fin, o en virtud de un convenio académico de intercambio y de realización de prácticas estudiantiles. Así mismo, cuando el extranjero desee ingresar al territorio nacional para ser entrenado en un arte u oficio. 
@@ -610,7 +527,6 @@
 											<li><b> * </b> Cuando se trate de menores de edad, allegar poder de los padres designando al responsable o tutor del estudiante durante su permanencia en el país, apostillado o legalizado, según el caso. A falta de los padres, firmará quien tenga la custodia o cuidado personal del menor.</li>
 											<li><b> * </b> Diligenciar la solicitud de visa por medio electrónico a través del siguiente enlace: Formulario Visas o personalmente en la oficina expedidora. En el caso de grupos artísticos, deportivos y culturales la solicitud de visa se podrá diligenciar por su representante, especificando los datos de cada uno de los integrantes del grupo.</li>
 										</ul>
-
 										<div class="nota_add">
 											<b>Nota:</b>
 											<ul> 
@@ -624,17 +540,14 @@
 										<a href="https://tramitesmre.cancilleria.gov.co/tramites/enlinea/solicitarVisa.xhtml" target="_blank"> Solicitar VISA</a>
 										<br>
 										<a href="http://www.cancilleria.gov.co/tramites_servicios/visas/clases" target="_blank"> Clases de VISA</a>
-
 										<h5>Notificación de llegada y trámite de cédula de extranjería</h5>
 										A partir del ingreso a Colombia el estudiante tiene 15 días calendario para el registro de visa de extranjeros en la oficina de Migración Colombia (Calle 100 No. 11B - 27 Bogotá Tel. 6017269 -6017200) y solicitar la cédula de extranjería como el documento de identidad del extranjero durante su permanencia en Colombia si su duración en superior a tres (3) meses. El incumplimiento de este registro personal tiene sanciones económicas para el extranjero según la Resolución DAS No. 078 de 2005
 									</p>
 								</div>
-
 								<div id="alojamiento_guia" class="content_inter ocultar">
 									<p>
 										Estas opciones de alojamiento no son ofrecidas directamente por la Corporación, sino que se tratan de lugares recomendados, ya que cumplen con altos estándares y se encuentran cerca a las instalaciones de la Universidad:
 										<br>
-										
 										<h5>RESIDENCIA UNIVERSITARIA CASA ESCOBAR</h5>
 										<img src="<?= URL_MASTER ?>/images/web/ori/CASA ESCOBAR.jpg" style="float: left; margin: 10px;" width="200">
 										<b> Responsable: </b> James Stewart Escobar Saenz <br>
@@ -645,7 +558,6 @@
 										<b> Servicios Ofrecidos: </b> Las habitaciones cuentan con cama, mesa de noche y closet. <br>
 										<b> Valor Promedio Mensual: </b> Desde $700.000 (COP) hasta 800.000 (COP), el precio incluye los servicios de agua, luz, gas en la ducha, servicio de lavandería una vez a la semana, direct TV y WIFI. El aseo a la habitación se realiza una vez a la semana. Las zonas comunes se limpian diariamente. Baño compartido con tres personas.<br>
 										<br>
-
 										<h5>RESIDENCIAS UNIVERSITARIAS RESIDENCIAL 10</h5>
 										<img src="<?= URL_MASTER ?>/images/web/ori/R10.jpg" style="float: left; margin: 10px;" width="200">
 										<b> Responsable: </b> Alejandro Rueda / Juan Sebastián Pescador <br>
@@ -675,27 +587,20 @@
 										<b> Correo Electrónico: </b> schouseco@gmail.com <br>
 										<b> Servicios Ofrecidos: </b> Cuenta con 20 habitaciones. La casa tiene comedor y cocina autoservicio el desayuno adicional tiene un costo de $ 7.500. Los baños son compartidos. Las zonas comunes tienen aseo todos los días. <br>
 										<b> Valor Promedio Mensual: </b> Valor de habitación individual $800.000 (COP) incluido lavado y alimentación.<br>
-
 										Las opciones presentadas tienen límites de cupos, por lo cual es importante que los estudiantes reserven su estadía al momento de inscribirse en alguno de nuestros cursos.
 									</p>
 								</div>
-
-
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
 			<!-- BECAS -->
 			<div id="becas" class="col s12 content_urep ocultar">
 				<h4 class="center"> Becas </h4>
 				<p>
 					La ORI busca dar a conocer a la comunidad de la Corporación becas que ofrecen distintas entidades e instituciones alrededor del mundo para estudios de postgrado, cursos cortos y estancias de Investigación. Con esto, se impulsa a estudiantes, docentes e investigadores y administrativos a que participen y aprovechen las oportunidades de financiación. Esta oportunidad permite que los beneficiarios fortalezcan su nivel académico y asimismo utilicen su experiencia como herramienta de aprendizaje
-
 					<div class="row">
-
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
@@ -706,7 +611,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
@@ -717,7 +621,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
@@ -728,7 +631,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
@@ -739,7 +641,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
@@ -750,7 +651,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
@@ -761,7 +661,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
@@ -772,7 +671,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col s12 m3">
 							<div class="card">
 								<div class="card-image" style="height: 150px;" >
@@ -784,16 +682,11 @@
 							</div>
 						</div>
 					</div>
-					
 				</p>
 			</div>
-
 		</div>
 	</div>
 </div>
-
 <?php require_once('../plantilla/footer.php'); ?>
 </body>
 </html>
-
-

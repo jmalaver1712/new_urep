@@ -1,20 +1,24 @@
 <!doctype html>
 <html>
 <head>
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
   <?php require_once('../plantilla/head.php'); 
   $todos_libros = $get_xml->registros_all_xml('libros.xml');
   ?>
 </head>
 <body>
-<?php require_once('plantilla_admin/menu_admin.php'); ?>
-<!-- CONTENIDO -->
-<div class="container">
-  <center>
-    <h3> Libros </h3>
-  </center>
+  <?php require_once('plantilla_admin/menu_admin.php'); ?>
+  <!-- CONTENIDO -->
+  <div class="container">
+    <center>
+      <h3> Libros </h3>
+    </center>
     <?php
-      foreach ($todos_libros as $libro) {
-    ?>
+    foreach ($todos_libros as $libro) {
+      ?>
 
       <div class="col s12 m6">
 
@@ -26,7 +30,7 @@
             <div class="card-content">
               <p class="titulo_card"><?= $libro->nombre ?></p>
               <p class="autor_card">
-              <b>Autores:</b><?= $libro->autores ?>
+                <b>Autores:</b><?= $libro->autores ?>
               </p>
             </div>
             <div class="card-action">
@@ -37,12 +41,12 @@
           </div>
         </div>
       </div>
-    <?php
-      }
+      <?php
+    }
     ?>
-</div>
+  </div>
   
-<?php require_once('../plantilla/footer.php'); ?>
+  <?php require_once('../plantilla/footer.php'); ?>
 
 </body>
 </html>

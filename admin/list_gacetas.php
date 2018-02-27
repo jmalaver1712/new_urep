@@ -1,20 +1,24 @@
 <!doctype html>
 <html>
 <head>
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
   <?php require_once('../plantilla/head.php'); 
   $todos_gaceta = $get_xml->registros_all_xml('gaceta.xml');
   ?>
 </head>
 <body>
-<?php require_once('plantilla_admin/menu_admin.php'); ?>
-<!-- CONTENIDO -->
-<div class="container">
-  <center>
-    <h3> Gaceta </h3>
-  </center>
+  <?php require_once('plantilla_admin/menu_admin.php'); ?>
+  <!-- CONTENIDO -->
+  <div class="container">
+    <center>
+      <h3> Gaceta </h3>
+    </center>
     <?php
-      foreach ($todos_gaceta as $gaceta) {
-    ?>
+    foreach ($todos_gaceta as $gaceta) {
+      ?>
 
       <div class="col s12 m6">
 
@@ -36,12 +40,12 @@
           </div>
         </div>
       </div>
-    <?php
-      }
+      <?php
+    }
     ?>
-</div>
+  </div>
   
-<?php require_once('../plantilla/footer.php'); ?>
+  <?php require_once('../plantilla/footer.php'); ?>
 
 </body>
 </html>
